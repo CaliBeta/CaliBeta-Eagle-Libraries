@@ -405,6 +405,51 @@
 <text x="19.645" y="0.335" size="1.27" layer="21" ratio="10" rot="R180">IN1</text>
 <text x="19.645" y="-2.205" size="1.27" layer="21" ratio="10" rot="R180">VCC</text>
 </package>
+<package name="DC-DC-STEP_UP-XL6009">
+<wire x1="-21.59" y1="10.414" x2="21.59" y2="10.414" width="0.127" layer="21"/>
+<wire x1="21.59" y1="10.414" x2="21.59" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="21.59" y1="-10.414" x2="-21.59" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="-21.59" y1="-10.414" x2="-21.59" y2="10.414" width="0.127" layer="21"/>
+<pad name="IN+" x="-19.812" y="8.636" drill="1.2" diameter="2.5" shape="square"/>
+<pad name="IN-" x="-19.812" y="-8.636" drill="1.2" diameter="2.5" shape="square"/>
+<pad name="OUT-" x="19.812" y="-8.636" drill="1.2" diameter="2.5" shape="square"/>
+<pad name="OUT+" x="19.812" y="8.636" drill="1.2" diameter="2.5" shape="square"/>
+<hole x="-14.478" y="7.62" drill="3"/>
+<hole x="15.24" y="-7.62" drill="3"/>
+<text x="0" y="11.43" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="-19.685" y="0" size="1.778" layer="21" rot="R90" align="center">IN</text>
+<text x="19.685" y="0" size="1.778" layer="21" rot="R90" align="center">OUT</text>
+<wire x1="19.685" y1="6.985" x2="19.685" y2="5.715" width="0.254" layer="21"/>
+<wire x1="19.05" y1="6.35" x2="20.32" y2="6.35" width="0.254" layer="21"/>
+<wire x1="-19.685" y1="-6.985" x2="-19.685" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="19.685" y1="-6.985" x2="19.685" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="-19.685" y1="6.985" x2="-19.685" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-20.32" y1="6.35" x2="-19.05" y2="6.35" width="0.254" layer="21"/>
+</package>
+<package name="SIM800L">
+<pad name="VCC" x="-9.96" y="9.2" drill="1" diameter="1.778"/>
+<pad name="RST" x="-9.96" y="6.66" drill="1" diameter="1.778"/>
+<pad name="TX" x="-9.96" y="4.12" drill="1" diameter="1.778"/>
+<pad name="RX" x="-9.96" y="1.58" drill="1" diameter="1.778"/>
+<pad name="GND" x="-9.96" y="-0.96" drill="1" diameter="1.778"/>
+<pad name="DTR" x="11.24" y="6.7" drill="1" diameter="1.778"/>
+<pad name="MIC+" x="11.24" y="4.16" drill="1" diameter="1.778"/>
+<pad name="MIC-" x="11.24" y="1.62" drill="1" diameter="1.778"/>
+<pad name="SPK+" x="11.24" y="-0.92" drill="1" diameter="1.778"/>
+<pad name="SPK-" x="11.24" y="-3.46" drill="1" diameter="1.778"/>
+<wire x1="-12" y1="13" x2="13" y2="13" width="0.127" layer="21"/>
+<wire x1="13" y1="13" x2="13" y2="-10" width="0.127" layer="21"/>
+<wire x1="13" y1="-10" x2="-12" y2="-10" width="0.127" layer="21"/>
+<wire x1="-12" y1="-10" x2="-12" y2="13" width="0.127" layer="21"/>
+<wire x1="-8.5" y1="-9" x2="9.5" y2="-9" width="0.127" layer="21"/>
+<wire x1="9.5" y1="-9" x2="9.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="9.5" y1="7.5" x2="-8.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-8.5" y1="7.5" x2="-8.5" y2="-9" width="0.127" layer="21"/>
+<text x="1" y="5.5" size="1.27" layer="21">SIM800L</text>
+<text x="-3" y="13.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.5" y="-12" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="GY-GPS6MV2">
@@ -571,6 +616,36 @@
 <pin name="NO" x="-27.94" y="5.08" length="middle"/>
 <pin name="NC" x="-27.94" y="-5.08" length="middle"/>
 <wire x1="-22.86" y1="10.16" x2="-22.86" y2="-10.16" width="0.254" layer="94"/>
+</symbol>
+<symbol name="DC-DC-CONVERSOR">
+<pin name="IN+" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="IN-" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="OUT+" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT-" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="2.54" y="12.7" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SIM800L">
+<pin name="VCC" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="RST" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="TX" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="RX" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="DTR" x="-15.24" y="5.08" length="middle"/>
+<pin name="SPK-" x="-15.24" y="-5.08" length="middle" direction="out"/>
+<pin name="MIC+" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="SPK+" x="-15.24" y="-2.54" length="middle" direction="out"/>
+<pin name="MIC-" x="-15.24" y="0" length="middle" direction="in"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="2.54" y="12.7" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -756,6 +831,50 @@
 <connect gate="G$1" pin="NO" pad="NO"/>
 <connect gate="G$1" pin="VCC.1" pad="VCC"/>
 <connect gate="G$1" pin="VCC.2" pad="J2.2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DC-DC-ELEVADOR-XL6009" prefix="MOD">
+<description>Modulo elevador de tension DC-DC</description>
+<gates>
+<gate name="G$1" symbol="DC-DC-CONVERSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DC-DC-STEP_UP-XL6009">
+<connects>
+<connect gate="G$1" pin="IN+" pad="IN+"/>
+<connect gate="G$1" pin="IN-" pad="IN-"/>
+<connect gate="G$1" pin="OUT+" pad="OUT+"/>
+<connect gate="G$1" pin="OUT-" pad="OUT-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SIM800L_MINI" prefix="MOD">
+<description>modulo GSM, GPRS SIM800L</description>
+<gates>
+<gate name="G$1" symbol="SIM800L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SIM800L">
+<connects>
+<connect gate="G$1" pin="DTR" pad="DTR"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MIC+" pad="MIC+"/>
+<connect gate="G$1" pin="MIC-" pad="MIC-"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="SPK+" pad="SPK+"/>
+<connect gate="G$1" pin="SPK-" pad="SPK-"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
