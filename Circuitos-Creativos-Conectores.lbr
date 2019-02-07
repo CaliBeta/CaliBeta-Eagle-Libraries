@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -221,6 +221,23 @@
 <text x="-3.5" y="2.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.5" y="-4" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="JST-2PH-2PIN">
+<pad name="1" x="-1.05" y="-0.5" drill="0.8" diameter="1.7" shape="octagon"/>
+<pad name="2" x="0.95" y="-0.5" drill="0.8" diameter="1.7" shape="octagon"/>
+<wire x1="-3" y1="-2.25" x2="3" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.25" x2="3" y2="1.25" width="0.127" layer="21"/>
+<wire x1="3" y1="1.25" x2="3" y2="2.25" width="0.127" layer="21"/>
+<wire x1="3" y1="2.25" x2="-3" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-3" y1="2.25" x2="-3" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-3" y1="1.25" x2="-3" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-3" y1="1.25" x2="-1" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.25" x2="-1" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-1" y1="0.75" x2="1" y2="0.75" width="0.127" layer="21"/>
+<wire x1="1" y1="0.75" x2="1" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1" y1="1.25" x2="3" y2="1.25" width="0.127" layer="21"/>
+<text x="-3.5" y="2.75" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-3.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CONECTOR-PWR">
@@ -289,6 +306,16 @@
 <pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="5" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="JST_2PIN">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="1" x="7.62" y="2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="7.62" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
+<text x="-4.064" y="5.842" size="1.6764" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.4224" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -364,6 +391,23 @@
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST_2PIN" prefix="J">
+<description>conector JST 2mm pitch de 2 pines, Imax 2A</description>
+<gates>
+<gate name="G$1" symbol="JST_2PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST-2PH-2PIN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
