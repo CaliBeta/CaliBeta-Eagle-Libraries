@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -203,6 +203,24 @@
 <wire x1="6" y1="3" x2="6" y2="2" width="0.127" layer="21"/>
 <text x="-3" y="3.5" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="SMT_5.2X5.2MM">
+<description>Footprint pulsador SMT tactil metalico 5.2mmx5.2mm</description>
+<smd name="1" x="-3" y="1.85" dx="1" dy="0.75" layer="1"/>
+<smd name="2" x="3" y="1.85" dx="1" dy="0.75" layer="1"/>
+<smd name="3" x="-3" y="-1.85" dx="1" dy="0.75" layer="1"/>
+<smd name="4" x="3" y="-1.85" dx="1" dy="0.75" layer="1"/>
+<wire x1="-1.5" y1="2" x2="1.5" y2="2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2" x2="2.5" y2="1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1" x2="2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1" x2="1.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2" x2="-1.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2" x2="-2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1" x2="-2.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1" x2="-1.5" y2="2" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="21"/>
+<text x="-3.5" y="2.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.5" y="-4" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CONECTOR-PWR">
@@ -307,8 +325,8 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="BOTON_TECLADO" prefix="P">
-<description>Boton con lamina de memoria</description>
+<deviceset name="PULSADOR" prefix="P">
+<description>PULSADOR CON LAMINA DE MEMORIA Y TACTIL SMT</description>
 <gates>
 <gate name="G$1" symbol="BOTON_TECLADO" x="0" y="0"/>
 </gates>
@@ -317,6 +335,15 @@
 <connects>
 <connect gate="G$1" pin="P$1" pad="1 2 3 4"/>
 <connect gate="G$1" pin="P$2" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5.2X5.2" package="SMT_5.2X5.2MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1 2"/>
+<connect gate="G$1" pin="P$2" pad="3 4"/>
 </connects>
 <technologies>
 <technology name=""/>
