@@ -284,7 +284,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="CD54" prefix="L">
+<deviceset name="CD54" prefix="L" uservalue="yes">
 <description>Power inductor SMD de la serie CD54</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR-FERRITA" x="0" y="0"/>
