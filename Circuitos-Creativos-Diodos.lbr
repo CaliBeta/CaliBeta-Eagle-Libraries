@@ -178,8 +178,8 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="1N5822" prefix="D">
-<description>Diodo de barrera Schottky Repetitive peak reverse voltage (VRRM): 40V, IRMS: 3A</description>
+<deviceset name="SS14" prefix="D">
+<description>Diodo de barrera Schottky (1N5819 SMD) &lt;b&gt;(VRRM):&lt;/b&gt; 40V, &lt;b&gt;IRMS:&lt;/b&gt; 1A</description>
 <gates>
 <gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
 </gates>
