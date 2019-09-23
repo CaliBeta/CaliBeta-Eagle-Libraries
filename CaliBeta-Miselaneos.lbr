@@ -204,6 +204,10 @@
 <text x="-2.447" y="1.312" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.574" y="-2.498" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="TOUCH-PAD-11X11">
+<smd name="TP" x="0" y="0" dx="11" dy="11" layer="1" roundness="100"/>
+<text x="-4.826" y="6.096" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="CSTCE8M00G55-R0" urn="urn:adsk.eagle:package:13493120/2" type="model">
@@ -256,6 +260,14 @@
 <text x="-2.54" y="6.604" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-8.382" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="TOUCH-PAD">
+<circle x="0" y="0" radius="15.24" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="12.7" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="7.62" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="10.16" width="0.1524" layer="94"/>
+<text x="-4.318" y="16.256" size="1.778" layer="95" ratio="10">&gt;NAME</text>
+<pin name="TP" x="-22.86" y="0" visible="pad" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAT_LI-PO" prefix="BAT" uservalue="yes">
@@ -290,6 +302,22 @@
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:13493120/2"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TOUCH-PAD" prefix="TP">
+<description>Superficie tactil SMD circular diametro 5.5mm</description>
+<gates>
+<gate name="G$1" symbol="TOUCH-PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TOUCH-PAD-11X11">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
