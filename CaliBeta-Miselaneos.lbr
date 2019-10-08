@@ -374,22 +374,22 @@
 <text x="15.494" y="3.302" size="2.54" layer="94" font="vector" ratio="15" rot="R180">HD44780 LCD1602 </text>
 <text x="-12.7" y="10.16" size="2.1844" layer="95" ratio="10" rot="R180">&gt;NAME</text>
 <text x="22.86" y="10.16" size="2.1844" layer="96" rot="R180">&gt;VALUE</text>
-<pin name="K" x="-17.78" y="-20.32" length="middle" direction="in" rot="R90"/>
-<pin name="A" x="-15.24" y="-20.32" length="middle" direction="in" rot="R90"/>
-<pin name="DB7" x="-12.7" y="-20.32" length="middle" rot="R90"/>
-<pin name="DB6" x="-10.16" y="-20.32" length="middle" rot="R90"/>
-<pin name="DB5" x="-7.62" y="-20.32" length="middle" rot="R90"/>
-<pin name="DB4" x="-5.08" y="-20.32" length="middle" rot="R90"/>
-<pin name="DB3" x="-2.54" y="-20.32" length="middle" rot="R90"/>
-<pin name="DB2" x="0" y="-20.32" length="middle" rot="R90"/>
-<pin name="DB1" x="2.54" y="-20.32" length="middle" rot="R90"/>
-<pin name="DB0" x="5.08" y="-20.32" length="middle" rot="R90"/>
-<pin name="E" x="7.62" y="-20.32" length="middle" direction="in" rot="R90"/>
-<pin name="RW" x="10.16" y="-20.32" length="middle" direction="in" rot="R90"/>
-<pin name="RS" x="12.7" y="-20.32" length="middle" direction="in" rot="R90"/>
-<pin name="VO" x="15.24" y="-20.32" length="middle" direction="in" rot="R90"/>
-<pin name="VDD" x="17.78" y="-20.32" length="middle" direction="sup" rot="R90"/>
-<pin name="VSS" x="20.32" y="-20.32" length="middle" direction="sup" rot="R90"/>
+<pin name="K" x="20.32" y="-20.32" length="middle" direction="in" rot="R90"/>
+<pin name="A" x="17.78" y="-20.32" length="middle" direction="in" rot="R90"/>
+<pin name="DB7" x="15.24" y="-20.32" length="middle" rot="R90"/>
+<pin name="DB6" x="12.7" y="-20.32" length="middle" rot="R90"/>
+<pin name="DB5" x="10.16" y="-20.32" length="middle" rot="R90"/>
+<pin name="DB4" x="7.62" y="-20.32" length="middle" rot="R90"/>
+<pin name="DB3" x="5.08" y="-20.32" length="middle" rot="R90"/>
+<pin name="DB2" x="2.54" y="-20.32" length="middle" rot="R90"/>
+<pin name="DB1" x="0" y="-20.32" length="middle" rot="R90"/>
+<pin name="DB0" x="-2.54" y="-20.32" length="middle" rot="R90"/>
+<pin name="E" x="-5.08" y="-20.32" length="middle" direction="in" rot="R90"/>
+<pin name="RW" x="-7.62" y="-20.32" length="middle" direction="in" rot="R90"/>
+<pin name="RS" x="-10.16" y="-20.32" length="middle" direction="in" rot="R90"/>
+<pin name="VO" x="-12.7" y="-20.32" length="middle" direction="in" rot="R90"/>
+<pin name="VDD" x="-15.24" y="-20.32" length="middle" direction="sup" rot="R90"/>
+<pin name="VSS" x="-17.78" y="-20.32" length="middle" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
