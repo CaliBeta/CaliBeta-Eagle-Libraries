@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -72,7 +72,28 @@
 </layers>
 <library>
 <packages>
-<package name="SOT-89-5" urn="urn:adsk.eagle:footprint:12304927/1">
+<package name="SOT-23-6" urn="urn:adsk.eagle:footprint:14345634/1">
+<wire x1="1.552" y1="-0.881" x2="-1.493" y2="-0.881" width="0.1524" layer="51"/>
+<wire x1="-1.493" y1="-0.881" x2="-1.493" y2="0.681" width="0.1524" layer="21"/>
+<wire x1="-1.493" y1="0.681" x2="1.552" y2="0.681" width="0.1524" layer="51"/>
+<wire x1="1.552" y1="0.681" x2="1.552" y2="-0.881" width="0.1524" layer="21"/>
+<circle x="-1.12" y="-0.55" radius="0.1" width="0" layer="21"/>
+<smd name="1" x="-0.92" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
+<smd name="2" x="0.03" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
+<smd name="3" x="0.98" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
+<smd name="4" x="0.98" y="1.05" dx="0.6" dy="0.9" layer="1"/>
+<smd name="5" x="0.03" y="1.05" dx="0.6" dy="0.9" layer="1"/>
+<smd name="6" x="-0.92" y="1.05" dx="0.6" dy="0.9" layer="1"/>
+<text x="-1.367" y="-2.772" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.367" y="1.602" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.17" y1="-1.5" x2="-0.67" y2="-0.9" layer="51"/>
+<rectangle x1="-0.22" y1="-1.5" x2="0.28" y2="-0.9" layer="51"/>
+<rectangle x1="0.73" y1="-1.5" x2="1.23" y2="-0.9" layer="51"/>
+<rectangle x1="0.73" y1="0.7" x2="1.23" y2="1.3" layer="51"/>
+<rectangle x1="-0.22" y1="0.7" x2="0.28" y2="1.3" layer="51"/>
+<rectangle x1="-1.17" y1="0.7" x2="-0.67" y2="1.3" layer="51"/>
+</package>
+<package name="SOT-89-5" urn="urn:adsk.eagle:footprint:14345635/1">
 <wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
 <wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="21"/>
 <wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.127" layer="21"/>
@@ -108,39 +129,16 @@
 <vertex x="-0.7874" y="1.2954"/>
 </polygon>
 </package>
-<package name="SOT-23-6" urn="urn:adsk.eagle:footprint:13175339/1">
-<wire x1="1.552" y1="-0.881" x2="-1.493" y2="-0.881" width="0.1524" layer="51"/>
-<wire x1="-1.493" y1="-0.881" x2="-1.493" y2="0.681" width="0.1524" layer="21"/>
-<wire x1="-1.493" y1="0.681" x2="1.552" y2="0.681" width="0.1524" layer="51"/>
-<wire x1="1.552" y1="0.681" x2="1.552" y2="-0.881" width="0.1524" layer="21"/>
-<circle x="-1.12" y="-0.55" radius="0.1" width="0" layer="21"/>
-<smd name="1" x="-0.92" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
-<smd name="2" x="0.03" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
-<smd name="3" x="0.98" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
-<smd name="4" x="0.98" y="1.05" dx="0.6" dy="0.9" layer="1"/>
-<smd name="5" x="0.03" y="1.05" dx="0.6" dy="0.9" layer="1"/>
-<smd name="6" x="-0.92" y="1.05" dx="0.6" dy="0.9" layer="1"/>
-<text x="-1.367" y="-2.772" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.367" y="1.602" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-1.17" y1="-1.5" x2="-0.67" y2="-0.9" layer="51"/>
-<rectangle x1="-0.22" y1="-1.5" x2="0.28" y2="-0.9" layer="51"/>
-<rectangle x1="0.73" y1="-1.5" x2="1.23" y2="-0.9" layer="51"/>
-<rectangle x1="0.73" y1="0.7" x2="1.23" y2="1.3" layer="51"/>
-<rectangle x1="-0.22" y1="0.7" x2="0.28" y2="1.3" layer="51"/>
-<rectangle x1="-1.17" y1="0.7" x2="-0.67" y2="1.3" layer="51"/>
-</package>
 </packages>
 <packages3d>
-<package3d name="SOT-89-5" urn="urn:adsk.eagle:package:12304898/2" type="model">
-<packageinstances>
-<packageinstance name="SOT-89-5"/>
-</packageinstances>
-</package3d>
-<package3d name="SOT-23-6" urn="urn:adsk.eagle:package:13175338/2" type="model">
-<description>6-SOT23, 0.95 mm pitch, 2.92 mm span, 2.95 X 1.70 X 1.26 mm body
-&lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.92 mm span with body size 2.95 X 1.70 X 1.26 mm&lt;/p&gt;</description>
+<package3d name="SOT-23-6" urn="urn:adsk.eagle:package:14345639/1" type="model">
 <packageinstances>
 <packageinstance name="SOT-23-6"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT-89-5" urn="urn:adsk.eagle:package:14345638/2" type="model">
+<packageinstances>
+<packageinstance name="SOT-89-5"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -177,30 +175,6 @@ LED Driver with 5000:1 Dimming</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PT4115" prefix="IC">
-<description>30V, 1.2A Step-down High Brightness
-LED Driver with 5000:1 Dimming</description>
-<gates>
-<gate name="G$1" symbol="PT4115" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-89-5">
-<connects>
-<connect gate="G$1" pin="CSN" pad="4"/>
-<connect gate="G$1" pin="DIM" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2 2@1"/>
-<connect gate="G$1" pin="SW" pad="1"/>
-<connect gate="G$1" pin="VIN" pad="5"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12304898/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TTP223B" prefix="IC">
 <description>Sensor tactil capacitivo de sensibilidad variable VCC: 2V-5V</description>
 <gates>
@@ -217,7 +191,31 @@ LED Driver with 5000:1 Dimming</description>
 <connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13175338/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345639/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PT4115" prefix="IC">
+<description>30V, 1.2A Step-down High Brightness
+LED Driver with 5000:1 Dimming</description>
+<gates>
+<gate name="G$1" symbol="PT4115" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-89-5">
+<connects>
+<connect gate="G$1" pin="CSN" pad="4"/>
+<connect gate="G$1" pin="DIM" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 2@1"/>
+<connect gate="G$1" pin="SW" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345638/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>

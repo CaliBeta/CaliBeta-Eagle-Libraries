@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -72,7 +72,7 @@
 </layers>
 <library>
 <packages>
-<package name="SOIC-8" urn="urn:adsk.eagle:footprint:12282642/1">
+<package name="SOIC-8" urn="urn:adsk.eagle:footprint:14345691/1">
 <wire x1="2.5" y1="1.9" x2="2.5" y2="-1.9" width="0.2032" layer="21"/>
 <wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
 <wire x1="-2.5" y1="-1.908" x2="-2.5" y2="1.9" width="0.2032" layer="21"/>
@@ -99,47 +99,35 @@
 </package>
 </packages>
 <packages3d>
-<package3d name="SOIC127P599X175-8" urn="urn:adsk.eagle:package:12282641/2" type="model">
-<description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.90 X 3.90 X 1.75 mm body
-&lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
+<package3d name="SOIC127P599X175-8" urn="urn:adsk.eagle:package:14345693/1" type="model">
 <packageinstances>
 <packageinstance name="SOIC-8"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="OB2269">
-<description>Controlador de corriente por PWM VDDmax = 36V, Vin = 36V, I = 10mA</description>
-<pin name="GND" x="-12.7" y="7.62" visible="pin" length="short" direction="pwr"/>
-<pin name="FB" x="-12.7" y="2.54" visible="pin" length="short"/>
-<pin name="VIN" x="-12.7" y="-2.54" visible="pin" length="short"/>
-<pin name="RI" x="-12.7" y="-7.62" visible="pin" length="short"/>
-<pin name="GATE" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="VDD" x="12.7" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="SENSE" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="RT" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="2.54" y="12.7" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUES</text>
-</symbol>
 <symbol name="MC34063A">
 <pin name="COMP" x="-12.7" y="-7.62" length="short"/>
 <pin name="VCC" x="-12.7" y="-2.54" length="short" direction="pwr"/>
 <pin name="IPK" x="-12.7" y="2.54" length="short"/>
 <pin name="DC" x="-12.7" y="7.62" length="short"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <pin name="GND" x="12.7" y="-7.62" length="short" direction="pwr" rot="R180"/>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <pin name="TC" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="SWE" x="12.7" y="2.54" length="short" rot="R180"/>
 <pin name="SWC" x="12.7" y="7.62" length="short" rot="R180"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <text x="-5.08" y="11.176" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="VCC-GND">
+<text x="1.524" y="-5.08" size="1.016" layer="95" rot="R90">GND</text>
+<text x="1.524" y="2.54" size="1.016" layer="95" rot="R90">VCC</text>
+<text x="-0.762" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 </symbol>
 <symbol name="MAX485">
 <wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
@@ -196,31 +184,52 @@
 <pin name="A" x="12.7" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="B" x="12.7" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="VCC-GND">
-<text x="1.524" y="-5.08" size="1.016" layer="95" rot="R90">GND</text>
-<text x="1.524" y="2.54" size="1.016" layer="95" rot="R90">VCC</text>
-<text x="-0.762" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
-<pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
-</symbol>
-<symbol name="ATTINY85">
-<pin name="VCC" x="-20.32" y="7.62" length="short" direction="pwr"/>
-<pin name="GND" x="-20.32" y="-10.16" length="short" direction="pwr"/>
-<pin name="PB0(MOSI/SDA)" x="22.86" y="-5.08" length="short" rot="R180"/>
-<pin name="PB1(MISO/D0)" x="22.86" y="-2.54" length="short" rot="R180"/>
-<pin name="PB2(SCK/SCL)" x="22.86" y="0" length="short" rot="R180"/>
-<pin name="PB3(XTAL1/ADC3)" x="-20.32" y="2.54" length="short"/>
-<pin name="PB4(XTAL2/ADC2)" x="-20.32" y="-5.08" length="short"/>
-<pin name="PB5(RST/ADC0)" x="22.86" y="2.54" length="short" rot="R180"/>
-<wire x1="-17.78" y1="-12.7" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-12.7" x2="20.32" y2="10.16" width="0.254" layer="94"/>
-<wire x1="20.32" y1="10.16" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="10.16" x2="-17.78" y2="-12.7" width="0.254" layer="94"/>
-<text x="5.08" y="12.7" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-2.54" y="-15.24" size="1.778" layer="95">&gt;VALUE</text>
+<symbol name="OB2269">
+<description>Controlador de corriente por PWM VDDmax = 36V, Vin = 36V, I = 10mA</description>
+<pin name="GND" x="-12.7" y="7.62" visible="pin" length="short" direction="pwr"/>
+<pin name="FB" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="VIN" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="RI" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="GATE" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="SENSE" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="RT" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="2.54" y="12.7" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUES</text>
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="MAX485CSA" prefix="IC">
+<description>Transceptor RS485 de bajo consumo, VCCmax = 12V typ=5V</description>
+<gates>
+<gate name="G$1" symbol="MAX485" x="0" y="0"/>
+<gate name="PWR" symbol="VCC-GND" x="22.86" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="A" pad="6"/>
+<connect gate="G$1" pin="B" pad="7"/>
+<connect gate="G$1" pin="DE" pad="3"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="RE/" pad="2"/>
+<connect gate="G$1" pin="RO" pad="1"/>
+<connect gate="PWR" pin="GND" pad="5"/>
+<connect gate="PWR" pin="VCC" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345693/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="OB2269" prefix="IC">
 <description>Controlador de corritente por PWM</description>
 <gates>
@@ -239,7 +248,7 @@
 <connect gate="G$1" pin="VIN" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12282641/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345693/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -265,34 +274,7 @@
 <connect gate="G$1" pin="VCC" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12282641/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX485CSA" prefix="IC">
-<description>Transceptor RS485 de bajo consumo, VCCmax = 12V typ=5V</description>
-<gates>
-<gate name="G$1" symbol="MAX485" x="0" y="0"/>
-<gate name="PWR" symbol="VCC-GND" x="22.86" y="0" addlevel="request"/>
-</gates>
-<devices>
-<device name="" package="SOIC-8">
-<connects>
-<connect gate="G$1" pin="A" pad="6"/>
-<connect gate="G$1" pin="B" pad="7"/>
-<connect gate="G$1" pin="DE" pad="3"/>
-<connect gate="G$1" pin="DI" pad="4"/>
-<connect gate="G$1" pin="RE/" pad="2"/>
-<connect gate="G$1" pin="RO" pad="1"/>
-<connect gate="PWR" pin="GND" pad="5"/>
-<connect gate="PWR" pin="VCC" pad="8"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12282641/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345693/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
