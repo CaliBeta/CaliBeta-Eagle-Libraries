@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -73,7 +73,32 @@
 </layers>
 <library>
 <packages>
-<package name="ELECTROIMAN" urn="urn:adsk.eagle:footprint:13597479/1">
+<package name="AA" urn="urn:adsk.eagle:footprint:14338692/1">
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="5.08" x2="-10.16" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-5.08" x2="3.81" y2="-5.08" width="0.1524" layer="21"/>
+<pad name="P$1" x="-8.89" y="3.81" drill="0.6" shape="square"/>
+<pad name="P$2" x="1.27" y="3.81" drill="0.6" shape="square"/>
+<pad name="P$3" x="2.54" y="-3.81" drill="0.6" shape="square"/>
+<pad name="P$4" x="-8.89" y="-3.81" drill="0.6" shape="square"/>
+<text x="-3.81" y="6.35" size="1.778" layer="25" ratio="10" align="center">&gt;NAME</text>
+</package>
+<package name="CD54" urn="urn:adsk.eagle:footprint:14337883/1">
+<wire x1="-3" y1="1.75" x2="-3" y2="-1.75" width="0.15" layer="21"/>
+<wire x1="-1.75" y1="-3" x2="1.75" y2="-3" width="0.15" layer="51"/>
+<wire x1="3" y1="-1.75" x2="3" y2="1.75" width="0.15" layer="21"/>
+<wire x1="1.75" y1="3" x2="-1.75" y2="3" width="0.15" layer="51"/>
+<wire x1="-3" y1="1.75" x2="-1.75" y2="3" width="0.15" layer="51"/>
+<wire x1="1.75" y1="3" x2="3" y2="1.75" width="0.15" layer="51"/>
+<wire x1="-3" y1="-1.75" x2="-1.75" y2="-3" width="0.15" layer="51"/>
+<wire x1="1.75" y1="-3" x2="3" y2="-1.75" width="0.15" layer="51"/>
+<smd name="1" x="0" y="2.5" dx="5.2" dy="2.5" layer="1"/>
+<smd name="2" x="0" y="-2.5" dx="5.2" dy="2.5" layer="1"/>
+<text x="-3.5" y="3.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.25" y="-4.75" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="ELECTROIMAN" urn="urn:adsk.eagle:footprint:14337877/1">
 <circle x="0" y="0" radius="10" width="0.2" layer="21"/>
 <circle x="0" y="0" radius="4" width="0.2" layer="21"/>
 <pad name="TORNILLO" x="0" y="0" drill="3"/>
@@ -86,7 +111,21 @@
 <smd name="1" x="-12.5" y="0" dx="2.2" dy="2.2" layer="1" roundness="100" rot="R90"/>
 <smd name="2" x="12.5" y="0" dx="2.2" dy="2.2" layer="1" roundness="100"/>
 </package>
-<package name="L0805" urn="urn:adsk.eagle:footprint:12246150/1">
+<package name="C0805" urn="urn:adsk.eagle:footprint:14337875/1">
+<wire x1="-1.973" y1="0.985" x2="1.973" y2="0.985" width="0.15" layer="21"/>
+<wire x1="1.973" y1="-0.985" x2="-1.973" y2="-0.985" width="0.15" layer="21"/>
+<wire x1="-1.973" y1="-0.985" x2="-1.973" y2="0.985" width="0.15" layer="21"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.985" x2="1.973" y2="-0.985" width="0.15" layer="21"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="0" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+</package>
+<package name="L0805" urn="urn:adsk.eagle:footprint:14337871/1">
 <wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.127" layer="21"/>
 <wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.127" layer="21"/>
 <wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.127" layer="21"/>
@@ -100,7 +139,24 @@
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 </package>
-<package name="TRIMMER_ACOSTADO" urn="urn:adsk.eagle:footprint:13227260/1">
+<package name="CT3528" urn="urn:adsk.eagle:footprint:14337870/1">
+<wire x1="-2.973" y1="1.733" x2="2.973" y2="1.733" width="0.15" layer="21"/>
+<wire x1="2.973" y1="-1.733" x2="-2.973" y2="-1.733" width="0.15" layer="21"/>
+<wire x1="-2.973" y1="-1.733" x2="-2.973" y2="1.733" width="0.15" layer="21"/>
+<wire x1="2.973" y1="1.733" x2="2.973" y2="-1.733" width="0.15" layer="21"/>
+<wire x1="-1.637" y1="-1.383" x2="-1.637" y2="1.383" width="0.175" layer="51"/>
+<wire x1="-1.778" y1="1.016" x2="-1.778" y2="-1.016" width="0.15" layer="51"/>
+<wire x1="1.637" y1="1.383" x2="-1.637" y2="1.383" width="0.2" layer="21"/>
+<wire x1="1.637" y1="-1.383" x2="-1.637" y2="-1.383" width="0.2" layer="21"/>
+<wire x1="1.778" y1="1.016" x2="1.778" y2="-1.016" width="0.15" layer="51"/>
+<wire x1="1.637" y1="-1.383" x2="1.637" y2="1.383" width="0.175" layer="51"/>
+<wire x1="-0.4" y1="1.3" x2="-0.4" y2="-1.3" width="0.35" layer="21"/>
+<smd name="+" x="-1.75" y="0" dx="1.8" dy="2.2" layer="1"/>
+<smd name="-" x="1.75" y="0" dx="1.8" dy="2.2" layer="1"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="TRIMMER_ACOSTADO" urn="urn:adsk.eagle:footprint:14337872/1">
 <wire x1="10" y1="10" x2="0" y2="10" width="0.254" layer="21"/>
 <wire x1="0" y1="10" x2="0" y2="0" width="0.254" layer="21"/>
 <wire x1="0" y1="0" x2="10" y2="0" width="0.254" layer="21"/>
@@ -118,38 +174,7 @@
 <text x="11.6" y="4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="1.91" y="1.495" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
-<package name="CT3528" urn="urn:adsk.eagle:footprint:12264323/1">
-<wire x1="-2.973" y1="1.733" x2="2.973" y2="1.733" width="0.15" layer="21"/>
-<wire x1="2.973" y1="-1.733" x2="-2.973" y2="-1.733" width="0.15" layer="21"/>
-<wire x1="-2.973" y1="-1.733" x2="-2.973" y2="1.733" width="0.15" layer="21"/>
-<wire x1="2.973" y1="1.733" x2="2.973" y2="-1.733" width="0.15" layer="21"/>
-<wire x1="-1.637" y1="-1.383" x2="-1.637" y2="1.383" width="0.175" layer="51"/>
-<wire x1="-1.778" y1="1.016" x2="-1.778" y2="-1.016" width="0.15" layer="51"/>
-<wire x1="1.637" y1="1.383" x2="-1.637" y2="1.383" width="0.2" layer="21"/>
-<wire x1="1.637" y1="-1.383" x2="-1.637" y2="-1.383" width="0.2" layer="21"/>
-<wire x1="1.778" y1="1.016" x2="1.778" y2="-1.016" width="0.15" layer="51"/>
-<wire x1="1.637" y1="-1.383" x2="1.637" y2="1.383" width="0.175" layer="51"/>
-<wire x1="-0.4" y1="1.3" x2="-0.4" y2="-1.3" width="0.35" layer="21"/>
-<smd name="+" x="-1.75" y="0" dx="1.8" dy="2.2" layer="1"/>
-<smd name="-" x="1.75" y="0" dx="1.8" dy="2.2" layer="1"/>
-<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="CD54" urn="urn:adsk.eagle:footprint:12246321/2">
-<wire x1="-3" y1="1.75" x2="-3" y2="-1.75" width="0.15" layer="21"/>
-<wire x1="-1.75" y1="-3" x2="1.75" y2="-3" width="0.15" layer="51"/>
-<wire x1="3" y1="-1.75" x2="3" y2="1.75" width="0.15" layer="21"/>
-<wire x1="1.75" y1="3" x2="-1.75" y2="3" width="0.15" layer="51"/>
-<wire x1="-3" y1="1.75" x2="-1.75" y2="3" width="0.15" layer="51"/>
-<wire x1="1.75" y1="3" x2="3" y2="1.75" width="0.15" layer="51"/>
-<wire x1="-3" y1="-1.75" x2="-1.75" y2="-3" width="0.15" layer="51"/>
-<wire x1="1.75" y1="-3" x2="3" y2="-1.75" width="0.15" layer="51"/>
-<smd name="1" x="0" y="2.5" dx="5.2" dy="2.5" layer="1"/>
-<smd name="2" x="0" y="-2.5" dx="5.2" dy="2.5" layer="1"/>
-<text x="-3.5" y="3.5" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.25" y="-4.75" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="R0805" urn="urn:adsk.eagle:footprint:12264283/1">
+<package name="R0805" urn="urn:adsk.eagle:footprint:14337879/1">
 <wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
 <wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.15" layer="21"/>
@@ -158,54 +183,12 @@
 <wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.15" layer="21"/>
 <smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 </package>
-<package name="R1206" urn="urn:adsk.eagle:footprint:13510412/1">
-<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
-<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
-<wire x1="-2.473" y1="1.183" x2="2.473" y2="1.183" width="0.15" layer="21"/>
-<wire x1="2.473" y1="1.183" x2="2.473" y2="-1.183" width="0.15" layer="21"/>
-<wire x1="2.473" y1="-1.183" x2="-2.473" y2="-1.183" width="0.15" layer="21"/>
-<wire x1="-2.473" y1="-1.183" x2="-2.473" y2="1.183" width="0.15" layer="21"/>
-<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.27" y="1.47" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.17" y="-2.74" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
-<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
-</package>
-<package name="C0805" urn="urn:adsk.eagle:footprint:12262784/1">
-<wire x1="-1.973" y1="0.985" x2="1.973" y2="0.985" width="0.15" layer="21"/>
-<wire x1="1.973" y1="-0.985" x2="-1.973" y2="-0.985" width="0.15" layer="21"/>
-<wire x1="-1.973" y1="-0.985" x2="-1.973" y2="0.985" width="0.15" layer="21"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.985" x2="1.973" y2="-0.985" width="0.15" layer="21"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.778" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-</package>
-<package name="C1206">
-<wire x1="-2.473" y1="1.15" x2="2.473" y2="1.15" width="0.15" layer="21"/>
-<wire x1="2.473" y1="-1.15" x2="-2.473" y2="-1.15" width="0.15" layer="21"/>
-<wire x1="-2.473" y1="-1.15" x2="-2.473" y2="1.15" width="0.15" layer="21"/>
-<wire x1="2.473" y1="1.15" x2="2.473" y2="-1.15" width="0.15" layer="21"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.905" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.032" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-</package>
-<package name="153CLV-0605" urn="urn:adsk.eagle:footprint:22904/1" locally_modified="yes">
+<package name="153CLV-0605" urn="urn:adsk.eagle:footprint:14337885/1">
 <description>&lt;b&gt;Aluminum electrolytic capacitors&lt;/b&gt;&lt;p&gt;
 SMD (Chip) Long Life Vertical 153 CLV&lt;p&gt;
 http://www.bccomponents.com/</description>
@@ -228,60 +211,94 @@ http://www.bccomponents.com/</description>
 <text x="-3.39" y="3.63" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.425" y="-4.885" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="R1206" urn="urn:adsk.eagle:footprint:14337881/1">
+<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
+<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
+<wire x1="-2.473" y1="1.183" x2="2.473" y2="1.183" width="0.15" layer="21"/>
+<wire x1="2.473" y1="1.183" x2="2.473" y2="-1.183" width="0.15" layer="21"/>
+<wire x1="2.473" y1="-1.183" x2="-2.473" y2="-1.183" width="0.15" layer="21"/>
+<wire x1="-2.473" y1="-1.183" x2="-2.473" y2="1.183" width="0.15" layer="21"/>
+<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<text x="0" y="2.105" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.027" y="-1.978" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
+<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
+</package>
+<package name="C1206" urn="urn:adsk.eagle:footprint:14337876/1">
+<wire x1="-2.473" y1="1.15" x2="2.473" y2="1.15" width="0.15" layer="21"/>
+<wire x1="2.473" y1="-1.15" x2="-2.473" y2="-1.15" width="0.15" layer="21"/>
+<wire x1="-2.473" y1="-1.15" x2="-2.473" y2="1.15" width="0.15" layer="21"/>
+<wire x1="2.473" y1="1.15" x2="2.473" y2="-1.15" width="0.15" layer="21"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="0" y="2.032" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.032" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+</package>
 </packages>
 <packages3d>
-<package3d name="INDC2113X75" urn="urn:adsk.eagle:package:12246148/5" type="model">
-<description>Chip, 2.10 X 1.30 X 0.75 mm body
-&lt;p&gt;Chip package with body size 2.10 X 1.30 X 0.75 mm&lt;/p&gt;</description>
+<package3d name="AA" urn="urn:adsk.eagle:package:14338693/1" type="box">
 <packageinstances>
-<packageinstance name="L0805"/>
+<packageinstance name="AA"/>
 </packageinstances>
 </package3d>
-<package3d name="CD54" urn="urn:adsk.eagle:package:12246320/4" type="model">
+<package3d name="ELECTROIMAN" urn="urn:adsk.eagle:package:14337896/1" type="model">
+<packageinstances>
+<packageinstance name="ELECTROIMAN"/>
+</packageinstances>
+</package3d>
+<package3d name="CD54" urn="urn:adsk.eagle:package:14337906/2" type="model">
 <packageinstances>
 <packageinstance name="CD54"/>
 </packageinstances>
 </package3d>
-<package3d name="CAPC2012X100" urn="urn:adsk.eagle:package:12262758/3" type="model">
-<description>Chip, 2.00 X 1.23 X 1.00 mm body
-&lt;p&gt;Chip package with body size 2.00 X 1.23 X 1.00 mm&lt;/p&gt;</description>
+<package3d name="CAPC2012X100" urn="urn:adsk.eagle:package:14337899/2" type="model">
 <packageinstances>
 <packageinstance name="C0805"/>
 </packageinstances>
 </package3d>
-<package3d name="RESC2014X50" urn="urn:adsk.eagle:package:12264278/2" type="model">
-<description>Chip, 2.00 X 1.40 X 0.50 mm body
-&lt;p&gt;Chip package with body size 2.00 X 1.40 X 0.50 mm&lt;/p&gt;</description>
+<package3d name="INDC2113X75" urn="urn:adsk.eagle:package:14337902/3" type="model">
+<description>Chip, 2.00 X 1.30 X 0.75 mm body
+&lt;p&gt;Chip package with body size 2.00 X 1.30 X 0.75 mm&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="R0805"/>
+<packageinstance name="L0805"/>
 </packageinstances>
 </package3d>
-<package3d name="CT3528" urn="urn:adsk.eagle:package:12264322/2" type="model">
+<package3d name="C1206" urn="urn:adsk.eagle:package:14337900/1" type="model">
 <packageinstances>
-<packageinstance name="CT3528"/>
+<packageinstance name="C1206"/>
 </packageinstances>
 </package3d>
-<package3d name="153CLV-0605" urn="urn:adsk.eagle:package:23398/2" type="model">
-<description>Aluminum electrolytic capacitors
-SMD (Chip) Long Life Vertical 153 CLV
+<package3d name="TRIMMER_ACOSTADO" urn="urn:adsk.eagle:package:14337895/1" type="model">
+<packageinstances>
+<packageinstance name="TRIMMER_ACOSTADO"/>
+</packageinstances>
+</package3d>
+<package3d name="153CLV-0605" urn="urn:adsk.eagle:package:14337905/2" type="model">
+<description>&lt;b&gt;Aluminum electrolytic capacitors&lt;/b&gt;&lt;p&gt;
+SMD (Chip) Long Life Vertical 153 CLV&lt;p&gt;
 http://www.bccomponents.com/</description>
 <packageinstances>
 <packageinstance name="153CLV-0605"/>
 </packageinstances>
 </package3d>
-<package3d name="TRIMMER_ACOSTADO" urn="urn:adsk.eagle:package:13227259/3" type="model">
+<package3d name="CT3528" urn="urn:adsk.eagle:package:14337901/1" type="model">
 <packageinstances>
-<packageinstance name="TRIMMER_ACOSTADO"/>
+<packageinstance name="CT3528"/>
 </packageinstances>
 </package3d>
-<package3d name="R1206" urn="urn:adsk.eagle:package:13510411/2" type="model">
+<package3d name="RESC2014X50" urn="urn:adsk.eagle:package:14337907/2" type="model">
+<packageinstances>
+<packageinstance name="R0805"/>
+</packageinstances>
+</package3d>
+<package3d name="R1206" urn="urn:adsk.eagle:package:14337904/1" type="model">
 <packageinstances>
 <packageinstance name="R1206"/>
-</packageinstances>
-</package3d>
-<package3d name="ELECTROIMAN" urn="urn:adsk.eagle:package:13597478/2" type="model">
-<packageinstances>
-<packageinstance name="ELECTROIMAN"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -309,6 +326,16 @@ http://www.bccomponents.com/</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="CAP">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 <symbol name="TRIMMER">
 <wire x1="0.762" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -357,31 +384,21 @@ http://www.bccomponents.com/</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="CAP">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024"/>
-<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="ELECTROIMAN" prefix="EL">
-<description>Electroiman para proyecto Levithale</description>
+<deviceset name="CD54" prefix="L" uservalue="yes">
+<description>Power inductor SMD de la serie CD54</description>
 <gates>
-<gate name="G$1" symbol="ELECTROIMAN" x="0" y="0"/>
+<gate name="G$1" symbol="INDUCTOR-FERRITA" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ELECTROIMAN">
+<device name="" package="CD54">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13597478/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337906/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -401,7 +418,47 @@ http://www.bccomponents.com/</description>
 <connect gate="L1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12246148/5"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337902/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELECTROIMAN" prefix="EL">
+<description>Electroiman para proyecto Levithale</description>
+<gates>
+<gate name="G$1" symbol="ELECTROIMAN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ELECTROIMAN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337896/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAP-POL" prefix="C" uservalue="yes">
+<description>Capacitor polarizado de tantalio</description>
+<gates>
+<gate name="G$1" symbol="CAP-POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CT3528">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337901/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -422,7 +479,7 @@ http://www.bccomponents.com/</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13227259/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337895/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -430,19 +487,19 @@ http://www.bccomponents.com/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAP-POL" prefix="C" uservalue="yes">
-<description>Capacitor polarizado de tantalio</description>
+<deviceset name="CAP-ALUM" prefix="C" uservalue="yes">
+<description>Capacitor polarizado electrolitico de aluminio</description>
 <gates>
 <gate name="G$1" symbol="CAP-POL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CT3528">
+<device name="CLV-0605" package="153CLV-0605">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12264322/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337905/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -450,27 +507,7 @@ http://www.bccomponents.com/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CD54" prefix="L" uservalue="yes">
-<description>Power inductor SMD de la serie CD54</description>
-<gates>
-<gate name="G$1" symbol="INDUCTOR-FERRITA" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CD54">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12246320/4"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RESISTOR" prefix="R" uservalue="yes">
+<deviceset name="RESISTOR_" prefix="R" uservalue="yes">
 <description>&lt;B&gt;RESISTOR&lt;/B&gt;, simbolo Americano</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -482,7 +519,7 @@ http://www.bccomponents.com/</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12264278/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337907/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -494,7 +531,7 @@ http://www.bccomponents.com/</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13510411/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337904/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -514,7 +551,7 @@ http://www.bccomponents.com/</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12262758/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337899/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -525,25 +562,8 @@ http://www.bccomponents.com/</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CAP-ALUM" prefix="C" uservalue="yes">
-<description>Capacitor polarizado electrolitico de aluminio</description>
-<gates>
-<gate name="G$1" symbol="CAP-POL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="CLV-0605" package="153CLV-0605">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23398/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14337900/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
