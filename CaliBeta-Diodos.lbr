@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -155,68 +155,7 @@
 </layers>
 <library>
 <packages>
-<package name="DO-214AC" urn="urn:adsk.eagle:footprint:14345459/2">
-<wire x1="-2.3" y1="1.2" x2="2.3" y2="1.2" width="0.15" layer="21"/>
-<wire x1="2.3" y1="1.2" x2="2.3" y2="-1.2" width="0.15" layer="51"/>
-<wire x1="2.3" y1="-1.2" x2="-2.3" y2="-1.2" width="0.15" layer="21"/>
-<wire x1="-2.3" y1="-1.2" x2="-2.3" y2="1.2" width="0.15" layer="51"/>
-<wire x1="-0.8" y1="0" x2="0.25" y2="0.75" width="0.15" layer="21"/>
-<wire x1="0.25" y1="0.75" x2="0.25" y2="-0.7" width="0.15" layer="21"/>
-<wire x1="0.25" y1="-0.7" x2="-0.8" y2="0" width="0.15" layer="21"/>
-<smd name="K" x="-2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
-<smd name="A" x="2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
-<text x="0.027" y="2.173" size="1.27" layer="25" ratio="10" align="center">&gt;NAME</text>
-<text x="0.027" y="-2.171" size="1.27" layer="27" ratio="10" align="center">&gt;VALUE</text>
-<rectangle x1="-2.6" y1="-0.7" x2="-2.35" y2="0.65" layer="51"/>
-<rectangle x1="2.35" y1="-0.7" x2="2.6" y2="0.65" layer="51"/>
-<rectangle x1="-1" y1="-1.15" x2="-0.7" y2="1.15" layer="21"/>
-</package>
-<package name="DO-35" urn="urn:adsk.eagle:footprint:14345456/2">
-<wire x1="-2.1" y1="1" x2="1" y2="1" width="0.2032" layer="21"/>
-<wire x1="1" y1="1" x2="2.1" y2="1" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="1" x2="2.1" y2="0" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="0" x2="2.1" y2="-1" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="-1" x2="1" y2="-1" width="0.2032" layer="21"/>
-<wire x1="1" y1="-1" x2="-2.1" y2="-1" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1" x2="-2.1" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="0" x2="-2.1" y2="1" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
-<wire x1="1" y1="1" x2="1" y2="-1" width="0.2032" layer="21"/>
-<pad name="A" x="-3.81" y="0" drill="0.8" diameter="1.778"/>
-<pad name="C" x="3.81" y="0" drill="0.8" diameter="1.778"/>
-<text x="0" y="2.159" size="1.778" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-2.159" size="1.6764" layer="27" align="center">&gt;VALUE</text>
-</package>
-<package name="LED3528-ROJO" urn="urn:adsk.eagle:footprint:14345467/2">
-<wire x1="-1.55" y1="1.4" x2="1.55" y2="1.4" width="0.1016" layer="21"/>
-<wire x1="1.55" y1="1.35" x2="1.55" y2="-1.35" width="0.1016" layer="51"/>
-<wire x1="1.55" y1="-1.4" x2="-1.55" y2="-1.4" width="0.1016" layer="21"/>
-<wire x1="-1.55" y1="-1.35" x2="-1.55" y2="1.35" width="0.1016" layer="51"/>
-<wire x1="-0.6" y1="0.95" x2="0.6" y2="0.95" width="0.1016" layer="21" curve="-68.40813"/>
-<wire x1="0.6" y1="-0.95" x2="-0.6" y2="-0.95" width="0.1016" layer="21" curve="-68.40813"/>
-<circle x="0" y="0" radius="1.15" width="0.1016" layer="51"/>
-<smd name="A" x="-1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
-<smd name="C" x="1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
-<text x="0" y="2.286" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-2.286" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<rectangle x1="-1.75" y1="0.6" x2="-1.6" y2="1.1" layer="51"/>
-<rectangle x1="-1.75" y1="-1.1" x2="-1.6" y2="-0.6" layer="51"/>
-<rectangle x1="1.6" y1="-1.1" x2="1.75" y2="-0.6" layer="51" rot="R180"/>
-<rectangle x1="1.6" y1="0.6" x2="1.75" y2="1.1" layer="51" rot="R180"/>
-<polygon width="0.1016" layer="51">
-<vertex x="1.55" y="-1.35"/>
-<vertex x="1.55" y="-0.625"/>
-<vertex x="0.825" y="-1.35"/>
-</polygon>
-<polygon width="0.1016" layer="21">
-<vertex x="1.55" y="-1.4"/>
-<vertex x="1.55" y="-1.2"/>
-<vertex x="1" y="-1.2"/>
-<vertex x="0.8" y="-1.4"/>
-</polygon>
-</package>
-<package name="LED1206-ROJO" urn="urn:adsk.eagle:footprint:14345568/1">
+<package name="LED1206-AZUL" urn="urn:adsk.eagle:footprint:14345569/1">
 <wire x1="1.6" y1="0.4" x2="1.6" y2="-0.4" width="0.1016" layer="51" curve="172.619069"/>
 <wire x1="-0.95" y1="0.8" x2="0.95" y2="0.8" width="0.1016" layer="51"/>
 <wire x1="0.95" y1="-0.8" x2="-0.95" y2="-0.8" width="0.1016" layer="51"/>
@@ -242,61 +181,7 @@
 <rectangle x1="0.4" y1="-0.9" x2="0.725" y2="-0.475" layer="21" rot="R270"/>
 <rectangle x1="0.125" y1="-0.175" x2="0.475" y2="0.175" layer="21" rot="R270"/>
 </package>
-<package name="LED1206-VERDE" urn="urn:adsk.eagle:footprint:14345514/3">
-<wire x1="1.6" y1="0.4" x2="1.6" y2="-0.4" width="0.1016" layer="51" curve="172.619069"/>
-<wire x1="-0.95" y1="0.8" x2="0.95" y2="0.8" width="0.1016" layer="51"/>
-<wire x1="0.95" y1="-0.8" x2="-0.95" y2="-0.8" width="0.1016" layer="51"/>
-<wire x1="-2.7" y1="-1.125" x2="2.7" y2="-1.125" width="0.15" layer="21"/>
-<wire x1="2.7" y1="-1.125" x2="2.7" y2="0.7" width="0.15" layer="21"/>
-<wire x1="2.3" y1="1.125" x2="-2.7" y2="1.125" width="0.15" layer="21"/>
-<wire x1="-2.7" y1="1.125" x2="-2.7" y2="-1.125" width="0.15" layer="21"/>
-<wire x1="2.3" y1="1.125" x2="2.7" y2="0.7" width="0.15" layer="21"/>
-<circle x="1.425" y="0.55" radius="0.1" width="0.1016" layer="51"/>
-<smd name="C" x="1.55" y="0" dx="1.5" dy="1.5" layer="1" rot="R270"/>
-<smd name="A" x="-1.55" y="0" dx="1.5" dy="1.5" layer="1" rot="R270"/>
-<text x="0.004" y="2.032" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0.004" y="-2.032" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<rectangle x1="1.3375" y1="0.5375" x2="1.8375" y2="0.6625" layer="51" rot="R270"/>
-<rectangle x1="1.275" y1="0.575" x2="1.5" y2="0.9" layer="51" rot="R270"/>
-<rectangle x1="1.275" y1="0.275" x2="1.4" y2="0.5" layer="51" rot="R270"/>
-<rectangle x1="1.075" y1="0.375" x2="1.5" y2="0.5" layer="51" rot="R270"/>
-<rectangle x1="1.225" y1="-0.775" x2="1.725" y2="-0.425" layer="51" rot="R270"/>
-<rectangle x1="0.9875" y1="-0.6125" x2="1.5875" y2="-0.4875" layer="51" rot="R270"/>
-<rectangle x1="0.25" y1="-0.15" x2="1.95" y2="0.15" layer="51" rot="R270"/>
-<rectangle x1="-2.15" y1="-0.35" x2="-0.45" y2="0.35" layer="51" rot="R270"/>
-<rectangle x1="0.4" y1="0.475" x2="0.725" y2="0.9" layer="21" rot="R270"/>
-<rectangle x1="0.4" y1="-0.9" x2="0.725" y2="-0.475" layer="21" rot="R270"/>
-<rectangle x1="0.125" y1="-0.175" x2="0.475" y2="0.175" layer="21" rot="R270"/>
-</package>
-<package name="LED0805-ROJO" urn="urn:adsk.eagle:footprint:14345466/2">
-<wire x1="0.885" y1="0.35" x2="0.885" y2="-0.35" width="0.1016" layer="51" curve="162.394521"/>
-<wire x1="-0.965" y1="0.35" x2="-0.965" y2="-0.35" width="0.1016" layer="51" curve="-162.394521"/>
-<wire x1="0.485" y1="-0.575" x2="-0.565" y2="-0.575" width="0.1016" layer="51"/>
-<wire x1="-0.54" y1="0.575" x2="0.885" y2="0.575" width="0.1016" layer="51"/>
-<wire x1="-2" y1="1" x2="1.625" y2="1" width="0.15" layer="21"/>
-<wire x1="2" y1="0.625" x2="2" y2="-1" width="0.15" layer="21"/>
-<wire x1="2" y1="-1" x2="-2" y2="-1" width="0.15" layer="21"/>
-<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.15" layer="21"/>
-<wire x1="1.625" y1="1" x2="2" y2="0.625" width="0.15" layer="21"/>
-<circle x="0.81" y="0.45" radius="0.103" width="0.1016" layer="51"/>
-<smd name="C" x="1.01" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
-<smd name="A" x="-1.09" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
-<text x="-0.04" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-0.04" y="-1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<rectangle x1="0.5475" y1="-0.7125" x2="0.8725" y2="-0.2125" layer="51" rot="R270"/>
-<rectangle x1="0.51" y1="0.125" x2="0.66" y2="0.375" layer="51" rot="R270"/>
-<rectangle x1="0.51" y1="-0.375" x2="0.66" y2="-0.125" layer="51" rot="R270"/>
-<rectangle x1="0.3475" y1="-0.0875" x2="0.7475" y2="0.0875" layer="51" rot="R270"/>
-<rectangle x1="-0.9525" y1="-0.7125" x2="-0.6275" y2="-0.2125" layer="51" rot="R270"/>
-<rectangle x1="-0.9525" y1="0.2125" x2="-0.6275" y2="0.7125" layer="51" rot="R270"/>
-<rectangle x1="-0.74" y1="-0.375" x2="-0.59" y2="-0.125" layer="51" rot="R270"/>
-<rectangle x1="-0.74" y1="0.125" x2="-0.59" y2="0.375" layer="51" rot="R270"/>
-<rectangle x1="-0.8275" y1="-0.0875" x2="-0.4275" y2="0.0875" layer="51" rot="R270"/>
-<rectangle x1="0.06" y1="-0.1" x2="0.26" y2="0.1" layer="21" rot="R270"/>
-<rectangle x1="0.46" y1="0.3" x2="0.76" y2="0.6" layer="51" rot="R270"/>
-<rectangle x1="0.76" y1="0.425" x2="1.085" y2="0.5" layer="51" rot="R270"/>
-</package>
-<package name="LED0805-VERDE" urn="urn:adsk.eagle:footprint:14345463/2">
+<package name="LED0805-AZUL" urn="urn:adsk.eagle:footprint:14345464/2">
 <wire x1="0.885" y1="0.35" x2="0.885" y2="-0.35" width="0.1016" layer="51" curve="162.394521"/>
 <wire x1="-0.965" y1="0.35" x2="-0.965" y2="-0.35" width="0.1016" layer="51" curve="-162.394521"/>
 <wire x1="0.485" y1="-0.575" x2="-0.565" y2="-0.575" width="0.1016" layer="51"/>
@@ -350,34 +235,33 @@
 <rectangle x1="0.4" y1="-0.9" x2="0.725" y2="-0.475" layer="21" rot="R270"/>
 <rectangle x1="0.125" y1="-0.175" x2="0.475" y2="0.175" layer="21" rot="R270"/>
 </package>
-<package name="5730" urn="urn:adsk.eagle:footprint:14345461/2">
-<smd name="1" x="2.4" y="0" dx="1" dy="1.7" layer="1" rot="R180"/>
-<smd name="2" x="-2.4" y="0" dx="1" dy="1.7" layer="1" rot="R180"/>
-<smd name="3" x="0" y="0" dx="2.3" dy="1.8" layer="1" rot="R180"/>
-<wire x1="2.55" y1="1.4" x2="-2.55" y2="1.4" width="0.2032" layer="21"/>
-<wire x1="-2.55" y1="1.4" x2="-2.55" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.55" y1="-1.4" x2="2.55" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="2.55" y1="-1.4" x2="2.55" y2="1.4" width="0.2032" layer="51"/>
-<rectangle x1="-2.8" y1="-0.9" x2="-2.55" y2="-0.4" layer="51" rot="R180"/>
-<rectangle x1="-2.8" y1="0.4" x2="-2.55" y2="0.9" layer="51" rot="R180"/>
-<rectangle x1="2.55" y1="0.4" x2="2.8" y2="0.9" layer="51" rot="R180"/>
-<rectangle x1="2.55" y1="-0.9" x2="2.8" y2="-0.4" layer="51" rot="R180"/>
-<rectangle x1="-0.8125" y1="-0.6375" x2="0.8125" y2="0.6375" layer="51" rot="R180"/>
-<polygon width="0.1" layer="51">
-<vertex x="2.6" y="-0.9"/>
-<vertex x="2.05" y="-1.45"/>
-<vertex x="2.55" y="-1.45"/>
-<vertex x="2.6" y="-1.4"/>
+<package name="LED3528-AZUL" urn="urn:adsk.eagle:footprint:14345465/2">
+<wire x1="-1.55" y1="1.4" x2="1.55" y2="1.4" width="0.1016" layer="21"/>
+<wire x1="1.55" y1="1.35" x2="1.55" y2="-1.35" width="0.1016" layer="51"/>
+<wire x1="1.55" y1="-1.4" x2="-1.55" y2="-1.4" width="0.1016" layer="21"/>
+<wire x1="-1.55" y1="-1.35" x2="-1.55" y2="1.35" width="0.1016" layer="51"/>
+<wire x1="-0.6" y1="0.95" x2="0.6" y2="0.95" width="0.1016" layer="21" curve="-68.40813"/>
+<wire x1="0.6" y1="-0.95" x2="-0.6" y2="-0.95" width="0.1016" layer="21" curve="-68.40813"/>
+<circle x="0" y="0" radius="1.15" width="0.1016" layer="51"/>
+<smd name="A" x="-1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
+<smd name="C" x="1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
+<text x="0" y="2.286" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.127" y="-2.286" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="-1.75" y1="0.6" x2="-1.6" y2="1.1" layer="51"/>
+<rectangle x1="-1.75" y1="-1.1" x2="-1.6" y2="-0.6" layer="51"/>
+<rectangle x1="1.6" y1="-1.1" x2="1.75" y2="-0.6" layer="51" rot="R180"/>
+<rectangle x1="1.6" y1="0.6" x2="1.75" y2="1.1" layer="51" rot="R180"/>
+<polygon width="0.1016" layer="51">
+<vertex x="1.55" y="-1.35"/>
+<vertex x="1.55" y="-0.625"/>
+<vertex x="0.825" y="-1.35"/>
 </polygon>
-<polygon width="0.1" layer="21">
-<vertex x="2.2625" y="-1.2375"/>
-<vertex x="2.05" y="-1.45"/>
-<vertex x="2.55" y="-1.45"/>
-<vertex x="2.6" y="-1.4"/>
-<vertex x="2.6" y="-1.2375"/>
+<polygon width="0.1016" layer="21">
+<vertex x="1.55" y="-1.4"/>
+<vertex x="1.55" y="-1.2"/>
+<vertex x="1" y="-1.2"/>
+<vertex x="0.8" y="-1.4"/>
 </polygon>
-<text x="0.01" y="2.298" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0.033" y="-2.388" size="1.27" layer="27" align="center">&gt;VALUE</text>
 </package>
 <package name="LED3528-VERDE" urn="urn:adsk.eagle:footprint:14345462/2">
 <wire x1="-1.55" y1="1.4" x2="1.55" y2="1.4" width="0.1016" layer="21"/>
@@ -407,63 +291,24 @@
 <vertex x="0.8" y="-1.4"/>
 </polygon>
 </package>
-<package name="LED0805-AMARILLO" urn="urn:adsk.eagle:footprint:14345458/2">
-<wire x1="0.885" y1="0.35" x2="0.885" y2="-0.35" width="0.1016" layer="51" curve="162.394521"/>
-<wire x1="-0.965" y1="0.35" x2="-0.965" y2="-0.35" width="0.1016" layer="51" curve="-162.394521"/>
-<wire x1="0.485" y1="-0.575" x2="-0.565" y2="-0.575" width="0.1016" layer="51"/>
-<wire x1="-0.54" y1="0.575" x2="0.885" y2="0.575" width="0.1016" layer="51"/>
-<wire x1="-2" y1="1" x2="1.625" y2="1" width="0.15" layer="21"/>
-<wire x1="2" y1="0.625" x2="2" y2="-1" width="0.15" layer="21"/>
-<wire x1="2" y1="-1" x2="-2" y2="-1" width="0.15" layer="21"/>
-<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.15" layer="21"/>
-<wire x1="1.625" y1="1" x2="2" y2="0.625" width="0.15" layer="21"/>
-<circle x="0.81" y="0.45" radius="0.103" width="0.1016" layer="51"/>
-<smd name="C" x="1.01" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
-<smd name="A" x="-1.09" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
-<text x="-0.04" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-0.04" y="-1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<rectangle x1="0.5475" y1="-0.7125" x2="0.8725" y2="-0.2125" layer="51" rot="R270"/>
-<rectangle x1="0.51" y1="0.125" x2="0.66" y2="0.375" layer="51" rot="R270"/>
-<rectangle x1="0.51" y1="-0.375" x2="0.66" y2="-0.125" layer="51" rot="R270"/>
-<rectangle x1="0.3475" y1="-0.0875" x2="0.7475" y2="0.0875" layer="51" rot="R270"/>
-<rectangle x1="-0.9525" y1="-0.7125" x2="-0.6275" y2="-0.2125" layer="51" rot="R270"/>
-<rectangle x1="-0.9525" y1="0.2125" x2="-0.6275" y2="0.7125" layer="51" rot="R270"/>
-<rectangle x1="-0.74" y1="-0.375" x2="-0.59" y2="-0.125" layer="51" rot="R270"/>
-<rectangle x1="-0.74" y1="0.125" x2="-0.59" y2="0.375" layer="51" rot="R270"/>
-<rectangle x1="-0.8275" y1="-0.0875" x2="-0.4275" y2="0.0875" layer="51" rot="R270"/>
-<rectangle x1="0.06" y1="-0.1" x2="0.26" y2="0.1" layer="21" rot="R270"/>
-<rectangle x1="0.46" y1="0.3" x2="0.76" y2="0.6" layer="51" rot="R270"/>
-<rectangle x1="0.76" y1="0.425" x2="1.085" y2="0.5" layer="51" rot="R270"/>
+<package name="DO-35" urn="urn:adsk.eagle:footprint:14345456/2">
+<wire x1="-2.1" y1="1" x2="1" y2="1" width="0.2032" layer="21"/>
+<wire x1="1" y1="1" x2="2.1" y2="1" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="1" x2="2.1" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="0" x2="2.1" y2="-1" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="-1" x2="1" y2="-1" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1" x2="-2.1" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="-1" x2="-2.1" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="0" x2="-2.1" y2="1" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.2032" layer="21"/>
+<pad name="A" x="-3.81" y="0" drill="0.8" diameter="1.778"/>
+<pad name="C" x="3.81" y="0" drill="0.8" diameter="1.778"/>
+<text x="0" y="2.159" size="1.778" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.159" size="1.6764" layer="27" align="center">&gt;VALUE</text>
 </package>
-<package name="LED0805-AZUL" urn="urn:adsk.eagle:footprint:14345464/2">
-<wire x1="0.885" y1="0.35" x2="0.885" y2="-0.35" width="0.1016" layer="51" curve="162.394521"/>
-<wire x1="-0.965" y1="0.35" x2="-0.965" y2="-0.35" width="0.1016" layer="51" curve="-162.394521"/>
-<wire x1="0.485" y1="-0.575" x2="-0.565" y2="-0.575" width="0.1016" layer="51"/>
-<wire x1="-0.54" y1="0.575" x2="0.885" y2="0.575" width="0.1016" layer="51"/>
-<wire x1="-2" y1="1" x2="1.625" y2="1" width="0.15" layer="21"/>
-<wire x1="2" y1="0.625" x2="2" y2="-1" width="0.15" layer="21"/>
-<wire x1="2" y1="-1" x2="-2" y2="-1" width="0.15" layer="21"/>
-<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.15" layer="21"/>
-<wire x1="1.625" y1="1" x2="2" y2="0.625" width="0.15" layer="21"/>
-<circle x="0.81" y="0.45" radius="0.103" width="0.1016" layer="51"/>
-<smd name="C" x="1.01" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
-<smd name="A" x="-1.09" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
-<text x="-0.04" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-0.04" y="-1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<rectangle x1="0.5475" y1="-0.7125" x2="0.8725" y2="-0.2125" layer="51" rot="R270"/>
-<rectangle x1="0.51" y1="0.125" x2="0.66" y2="0.375" layer="51" rot="R270"/>
-<rectangle x1="0.51" y1="-0.375" x2="0.66" y2="-0.125" layer="51" rot="R270"/>
-<rectangle x1="0.3475" y1="-0.0875" x2="0.7475" y2="0.0875" layer="51" rot="R270"/>
-<rectangle x1="-0.9525" y1="-0.7125" x2="-0.6275" y2="-0.2125" layer="51" rot="R270"/>
-<rectangle x1="-0.9525" y1="0.2125" x2="-0.6275" y2="0.7125" layer="51" rot="R270"/>
-<rectangle x1="-0.74" y1="-0.375" x2="-0.59" y2="-0.125" layer="51" rot="R270"/>
-<rectangle x1="-0.74" y1="0.125" x2="-0.59" y2="0.375" layer="51" rot="R270"/>
-<rectangle x1="-0.8275" y1="-0.0875" x2="-0.4275" y2="0.0875" layer="51" rot="R270"/>
-<rectangle x1="0.06" y1="-0.1" x2="0.26" y2="0.1" layer="21" rot="R270"/>
-<rectangle x1="0.46" y1="0.3" x2="0.76" y2="0.6" layer="51" rot="R270"/>
-<rectangle x1="0.76" y1="0.425" x2="1.085" y2="0.5" layer="51" rot="R270"/>
-</package>
-<package name="LED1206-AZUL" urn="urn:adsk.eagle:footprint:14345569/1">
+<package name="LED1206-VERDE" urn="urn:adsk.eagle:footprint:14345514/3">
 <wire x1="1.6" y1="0.4" x2="1.6" y2="-0.4" width="0.1016" layer="51" curve="172.619069"/>
 <wire x1="-0.95" y1="0.8" x2="0.95" y2="0.8" width="0.1016" layer="51"/>
 <wire x1="0.95" y1="-0.8" x2="-0.95" y2="-0.8" width="0.1016" layer="51"/>
@@ -489,61 +334,49 @@
 <rectangle x1="0.4" y1="-0.9" x2="0.725" y2="-0.475" layer="21" rot="R270"/>
 <rectangle x1="0.125" y1="-0.175" x2="0.475" y2="0.175" layer="21" rot="R270"/>
 </package>
-<package name="LED3528-BLANCO" urn="urn:adsk.eagle:footprint:14345460/2">
-<wire x1="-1.55" y1="1.4" x2="1.55" y2="1.4" width="0.1016" layer="21"/>
-<wire x1="1.55" y1="1.35" x2="1.55" y2="-1.35" width="0.1016" layer="51"/>
-<wire x1="1.55" y1="-1.4" x2="-1.55" y2="-1.4" width="0.1016" layer="21"/>
-<wire x1="-1.55" y1="-1.35" x2="-1.55" y2="1.35" width="0.1016" layer="51"/>
-<wire x1="-0.6" y1="0.95" x2="0.6" y2="0.95" width="0.1016" layer="21" curve="-68.40813"/>
-<wire x1="0.6" y1="-0.95" x2="-0.6" y2="-0.95" width="0.1016" layer="21" curve="-68.40813"/>
-<circle x="0" y="0" radius="1.15" width="0.1016" layer="51"/>
-<smd name="A" x="-1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
-<smd name="C" x="1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
-<text x="0" y="2.286" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-2.159" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<rectangle x1="-1.75" y1="0.6" x2="-1.6" y2="1.1" layer="51"/>
-<rectangle x1="-1.75" y1="-1.1" x2="-1.6" y2="-0.6" layer="51"/>
-<rectangle x1="1.6" y1="-1.1" x2="1.75" y2="-0.6" layer="51" rot="R180"/>
-<rectangle x1="1.6" y1="0.6" x2="1.75" y2="1.1" layer="51" rot="R180"/>
-<polygon width="0.1016" layer="51">
-<vertex x="1.55" y="-1.35"/>
-<vertex x="1.55" y="-0.625"/>
-<vertex x="0.825" y="-1.35"/>
-</polygon>
-<polygon width="0.1016" layer="21">
-<vertex x="1.55" y="-1.4"/>
-<vertex x="1.55" y="-1.2"/>
-<vertex x="1" y="-1.2"/>
-<vertex x="0.8" y="-1.4"/>
-</polygon>
+<package name="DO-214AC" urn="urn:adsk.eagle:footprint:14345459/2">
+<wire x1="-2.3" y1="1.2" x2="2.3" y2="1.2" width="0.15" layer="21"/>
+<wire x1="2.3" y1="1.2" x2="2.3" y2="-1.2" width="0.15" layer="51"/>
+<wire x1="2.3" y1="-1.2" x2="-2.3" y2="-1.2" width="0.15" layer="21"/>
+<wire x1="-2.3" y1="-1.2" x2="-2.3" y2="1.2" width="0.15" layer="51"/>
+<wire x1="-0.8" y1="0" x2="0.25" y2="0.75" width="0.15" layer="21"/>
+<wire x1="0.25" y1="0.75" x2="0.25" y2="-0.7" width="0.15" layer="21"/>
+<wire x1="0.25" y1="-0.7" x2="-0.8" y2="0" width="0.15" layer="21"/>
+<smd name="K" x="-2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
+<smd name="A" x="2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
+<text x="0.027" y="2.173" size="1.27" layer="25" ratio="10" align="center">&gt;NAME</text>
+<text x="0.027" y="-2.171" size="1.27" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<rectangle x1="-2.6" y1="-0.7" x2="-2.35" y2="0.65" layer="51"/>
+<rectangle x1="2.35" y1="-0.7" x2="2.6" y2="0.65" layer="51"/>
+<rectangle x1="-1" y1="-1.15" x2="-0.7" y2="1.15" layer="21"/>
 </package>
-<package name="LED3528-AZUL" urn="urn:adsk.eagle:footprint:14345465/2">
-<wire x1="-1.55" y1="1.4" x2="1.55" y2="1.4" width="0.1016" layer="21"/>
-<wire x1="1.55" y1="1.35" x2="1.55" y2="-1.35" width="0.1016" layer="51"/>
-<wire x1="1.55" y1="-1.4" x2="-1.55" y2="-1.4" width="0.1016" layer="21"/>
-<wire x1="-1.55" y1="-1.35" x2="-1.55" y2="1.35" width="0.1016" layer="51"/>
-<wire x1="-0.6" y1="0.95" x2="0.6" y2="0.95" width="0.1016" layer="21" curve="-68.40813"/>
-<wire x1="0.6" y1="-0.95" x2="-0.6" y2="-0.95" width="0.1016" layer="21" curve="-68.40813"/>
-<circle x="0" y="0" radius="1.15" width="0.1016" layer="51"/>
-<smd name="A" x="-1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
-<smd name="C" x="1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
-<text x="0" y="2.286" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-0.127" y="-2.286" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<rectangle x1="-1.75" y1="0.6" x2="-1.6" y2="1.1" layer="51"/>
-<rectangle x1="-1.75" y1="-1.1" x2="-1.6" y2="-0.6" layer="51"/>
-<rectangle x1="1.6" y1="-1.1" x2="1.75" y2="-0.6" layer="51" rot="R180"/>
-<rectangle x1="1.6" y1="0.6" x2="1.75" y2="1.1" layer="51" rot="R180"/>
-<polygon width="0.1016" layer="51">
-<vertex x="1.55" y="-1.35"/>
-<vertex x="1.55" y="-0.625"/>
-<vertex x="0.825" y="-1.35"/>
-</polygon>
-<polygon width="0.1016" layer="21">
-<vertex x="1.55" y="-1.4"/>
-<vertex x="1.55" y="-1.2"/>
-<vertex x="1" y="-1.2"/>
-<vertex x="0.8" y="-1.4"/>
-</polygon>
+<package name="LED0805-VERDE" urn="urn:adsk.eagle:footprint:14345463/2">
+<wire x1="0.885" y1="0.35" x2="0.885" y2="-0.35" width="0.1016" layer="51" curve="162.394521"/>
+<wire x1="-0.965" y1="0.35" x2="-0.965" y2="-0.35" width="0.1016" layer="51" curve="-162.394521"/>
+<wire x1="0.485" y1="-0.575" x2="-0.565" y2="-0.575" width="0.1016" layer="51"/>
+<wire x1="-0.54" y1="0.575" x2="0.885" y2="0.575" width="0.1016" layer="51"/>
+<wire x1="-2" y1="1" x2="1.625" y2="1" width="0.15" layer="21"/>
+<wire x1="2" y1="0.625" x2="2" y2="-1" width="0.15" layer="21"/>
+<wire x1="2" y1="-1" x2="-2" y2="-1" width="0.15" layer="21"/>
+<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.15" layer="21"/>
+<wire x1="1.625" y1="1" x2="2" y2="0.625" width="0.15" layer="21"/>
+<circle x="0.81" y="0.45" radius="0.103" width="0.1016" layer="51"/>
+<smd name="C" x="1.01" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
+<smd name="A" x="-1.09" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
+<text x="-0.04" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.04" y="-1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="0.5475" y1="-0.7125" x2="0.8725" y2="-0.2125" layer="51" rot="R270"/>
+<rectangle x1="0.51" y1="0.125" x2="0.66" y2="0.375" layer="51" rot="R270"/>
+<rectangle x1="0.51" y1="-0.375" x2="0.66" y2="-0.125" layer="51" rot="R270"/>
+<rectangle x1="0.3475" y1="-0.0875" x2="0.7475" y2="0.0875" layer="51" rot="R270"/>
+<rectangle x1="-0.9525" y1="-0.7125" x2="-0.6275" y2="-0.2125" layer="51" rot="R270"/>
+<rectangle x1="-0.9525" y1="0.2125" x2="-0.6275" y2="0.7125" layer="51" rot="R270"/>
+<rectangle x1="-0.74" y1="-0.375" x2="-0.59" y2="-0.125" layer="51" rot="R270"/>
+<rectangle x1="-0.74" y1="0.125" x2="-0.59" y2="0.375" layer="51" rot="R270"/>
+<rectangle x1="-0.8275" y1="-0.0875" x2="-0.4275" y2="0.0875" layer="51" rot="R270"/>
+<rectangle x1="0.06" y1="-0.1" x2="0.26" y2="0.1" layer="21" rot="R270"/>
+<rectangle x1="0.46" y1="0.3" x2="0.76" y2="0.6" layer="51" rot="R270"/>
+<rectangle x1="0.76" y1="0.425" x2="1.085" y2="0.5" layer="51" rot="R270"/>
 </package>
 <package name="LED0805-BLANCO" urn="urn:adsk.eagle:footprint:14345457/2">
 <wire x1="0.885" y1="0.35" x2="0.885" y2="-0.35" width="0.1016" layer="51" curve="162.394521"/>
@@ -573,63 +406,175 @@
 <rectangle x1="0.46" y1="0.3" x2="0.76" y2="0.6" layer="51" rot="R270"/>
 <rectangle x1="0.76" y1="0.425" x2="1.085" y2="0.5" layer="51" rot="R270"/>
 </package>
+<package name="LED3528-BLANCO" urn="urn:adsk.eagle:footprint:14345460/2">
+<wire x1="-1.55" y1="1.4" x2="1.55" y2="1.4" width="0.1016" layer="21"/>
+<wire x1="1.55" y1="1.35" x2="1.55" y2="-1.35" width="0.1016" layer="51"/>
+<wire x1="1.55" y1="-1.4" x2="-1.55" y2="-1.4" width="0.1016" layer="21"/>
+<wire x1="-1.55" y1="-1.35" x2="-1.55" y2="1.35" width="0.1016" layer="51"/>
+<wire x1="-0.6" y1="0.95" x2="0.6" y2="0.95" width="0.1016" layer="21" curve="-68.40813"/>
+<wire x1="0.6" y1="-0.95" x2="-0.6" y2="-0.95" width="0.1016" layer="21" curve="-68.40813"/>
+<circle x="0" y="0" radius="1.15" width="0.1016" layer="51"/>
+<smd name="A" x="-1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
+<smd name="C" x="1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
+<text x="0" y="2.286" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.159" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="-1.75" y1="0.6" x2="-1.6" y2="1.1" layer="51"/>
+<rectangle x1="-1.75" y1="-1.1" x2="-1.6" y2="-0.6" layer="51"/>
+<rectangle x1="1.6" y1="-1.1" x2="1.75" y2="-0.6" layer="51" rot="R180"/>
+<rectangle x1="1.6" y1="0.6" x2="1.75" y2="1.1" layer="51" rot="R180"/>
+<polygon width="0.1016" layer="51">
+<vertex x="1.55" y="-1.35"/>
+<vertex x="1.55" y="-0.625"/>
+<vertex x="0.825" y="-1.35"/>
+</polygon>
+<polygon width="0.1016" layer="21">
+<vertex x="1.55" y="-1.4"/>
+<vertex x="1.55" y="-1.2"/>
+<vertex x="1" y="-1.2"/>
+<vertex x="0.8" y="-1.4"/>
+</polygon>
+</package>
+<package name="5730" urn="urn:adsk.eagle:footprint:14345461/3">
+<smd name="C" x="2.4" y="0" dx="1" dy="1.7" layer="1" rot="R180"/>
+<smd name="A" x="-2.4" y="0" dx="1" dy="1.7" layer="1" rot="R180"/>
+<smd name="3" x="0" y="0" dx="2.3" dy="1.8" layer="1" rot="R180"/>
+<wire x1="2.55" y1="1.4" x2="-2.55" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="-2.55" y1="1.4" x2="-2.55" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.55" y1="-1.4" x2="2.55" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.55" y1="-1.4" x2="2.55" y2="1.4" width="0.2032" layer="51"/>
+<rectangle x1="-2.8" y1="-0.9" x2="-2.55" y2="-0.4" layer="51" rot="R180"/>
+<rectangle x1="-2.8" y1="0.4" x2="-2.55" y2="0.9" layer="51" rot="R180"/>
+<rectangle x1="2.55" y1="0.4" x2="2.8" y2="0.9" layer="51" rot="R180"/>
+<rectangle x1="2.55" y1="-0.9" x2="2.8" y2="-0.4" layer="51" rot="R180"/>
+<rectangle x1="-0.8125" y1="-0.6375" x2="0.8125" y2="0.6375" layer="51" rot="R180"/>
+<polygon width="0.1" layer="51">
+<vertex x="2.6" y="-0.9"/>
+<vertex x="2.05" y="-1.45"/>
+<vertex x="2.55" y="-1.45"/>
+<vertex x="2.6" y="-1.4"/>
+</polygon>
+<polygon width="0.1" layer="21">
+<vertex x="2.2625" y="-1.2375"/>
+<vertex x="2.05" y="-1.45"/>
+<vertex x="2.55" y="-1.45"/>
+<vertex x="2.6" y="-1.4"/>
+<vertex x="2.6" y="-1.2375"/>
+</polygon>
+<text x="0.01" y="2.298" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0.033" y="-2.388" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
+<package name="LED0805-AMARILLO" urn="urn:adsk.eagle:footprint:14345458/2">
+<wire x1="0.885" y1="0.35" x2="0.885" y2="-0.35" width="0.1016" layer="51" curve="162.394521"/>
+<wire x1="-0.965" y1="0.35" x2="-0.965" y2="-0.35" width="0.1016" layer="51" curve="-162.394521"/>
+<wire x1="0.485" y1="-0.575" x2="-0.565" y2="-0.575" width="0.1016" layer="51"/>
+<wire x1="-0.54" y1="0.575" x2="0.885" y2="0.575" width="0.1016" layer="51"/>
+<wire x1="-2" y1="1" x2="1.625" y2="1" width="0.15" layer="21"/>
+<wire x1="2" y1="0.625" x2="2" y2="-1" width="0.15" layer="21"/>
+<wire x1="2" y1="-1" x2="-2" y2="-1" width="0.15" layer="21"/>
+<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.15" layer="21"/>
+<wire x1="1.625" y1="1" x2="2" y2="0.625" width="0.15" layer="21"/>
+<circle x="0.81" y="0.45" radius="0.103" width="0.1016" layer="51"/>
+<smd name="C" x="1.01" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
+<smd name="A" x="-1.09" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
+<text x="-0.04" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.04" y="-1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="0.5475" y1="-0.7125" x2="0.8725" y2="-0.2125" layer="51" rot="R270"/>
+<rectangle x1="0.51" y1="0.125" x2="0.66" y2="0.375" layer="51" rot="R270"/>
+<rectangle x1="0.51" y1="-0.375" x2="0.66" y2="-0.125" layer="51" rot="R270"/>
+<rectangle x1="0.3475" y1="-0.0875" x2="0.7475" y2="0.0875" layer="51" rot="R270"/>
+<rectangle x1="-0.9525" y1="-0.7125" x2="-0.6275" y2="-0.2125" layer="51" rot="R270"/>
+<rectangle x1="-0.9525" y1="0.2125" x2="-0.6275" y2="0.7125" layer="51" rot="R270"/>
+<rectangle x1="-0.74" y1="-0.375" x2="-0.59" y2="-0.125" layer="51" rot="R270"/>
+<rectangle x1="-0.74" y1="0.125" x2="-0.59" y2="0.375" layer="51" rot="R270"/>
+<rectangle x1="-0.8275" y1="-0.0875" x2="-0.4275" y2="0.0875" layer="51" rot="R270"/>
+<rectangle x1="0.06" y1="-0.1" x2="0.26" y2="0.1" layer="21" rot="R270"/>
+<rectangle x1="0.46" y1="0.3" x2="0.76" y2="0.6" layer="51" rot="R270"/>
+<rectangle x1="0.76" y1="0.425" x2="1.085" y2="0.5" layer="51" rot="R270"/>
+</package>
+<package name="LED1206-ROJO" urn="urn:adsk.eagle:footprint:14345568/1">
+<wire x1="1.6" y1="0.4" x2="1.6" y2="-0.4" width="0.1016" layer="51" curve="172.619069"/>
+<wire x1="-0.95" y1="0.8" x2="0.95" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="0.95" y1="-0.8" x2="-0.95" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="-2.7" y1="-1.125" x2="2.7" y2="-1.125" width="0.15" layer="21"/>
+<wire x1="2.7" y1="-1.125" x2="2.7" y2="0.7" width="0.15" layer="21"/>
+<wire x1="2.3" y1="1.125" x2="-2.7" y2="1.125" width="0.15" layer="21"/>
+<wire x1="-2.7" y1="1.125" x2="-2.7" y2="-1.125" width="0.15" layer="21"/>
+<wire x1="2.3" y1="1.125" x2="2.7" y2="0.7" width="0.15" layer="21"/>
+<circle x="1.425" y="0.55" radius="0.1" width="0.1016" layer="51"/>
+<smd name="C" x="1.55" y="0" dx="1.5" dy="1.5" layer="1" rot="R270"/>
+<smd name="A" x="-1.55" y="0" dx="1.5" dy="1.5" layer="1" rot="R270"/>
+<text x="0.004" y="2.032" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0.004" y="-2.032" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="1.3375" y1="0.5375" x2="1.8375" y2="0.6625" layer="51" rot="R270"/>
+<rectangle x1="1.275" y1="0.575" x2="1.5" y2="0.9" layer="51" rot="R270"/>
+<rectangle x1="1.275" y1="0.275" x2="1.4" y2="0.5" layer="51" rot="R270"/>
+<rectangle x1="1.075" y1="0.375" x2="1.5" y2="0.5" layer="51" rot="R270"/>
+<rectangle x1="1.225" y1="-0.775" x2="1.725" y2="-0.425" layer="51" rot="R270"/>
+<rectangle x1="0.9875" y1="-0.6125" x2="1.5875" y2="-0.4875" layer="51" rot="R270"/>
+<rectangle x1="0.25" y1="-0.15" x2="1.95" y2="0.15" layer="51" rot="R270"/>
+<rectangle x1="-2.15" y1="-0.35" x2="-0.45" y2="0.35" layer="51" rot="R270"/>
+<rectangle x1="0.4" y1="0.475" x2="0.725" y2="0.9" layer="21" rot="R270"/>
+<rectangle x1="0.4" y1="-0.9" x2="0.725" y2="-0.475" layer="21" rot="R270"/>
+<rectangle x1="0.125" y1="-0.175" x2="0.475" y2="0.175" layer="21" rot="R270"/>
+</package>
+<package name="LED3528-ROJO" urn="urn:adsk.eagle:footprint:14345467/2">
+<wire x1="-1.55" y1="1.4" x2="1.55" y2="1.4" width="0.1016" layer="21"/>
+<wire x1="1.55" y1="1.35" x2="1.55" y2="-1.35" width="0.1016" layer="51"/>
+<wire x1="1.55" y1="-1.4" x2="-1.55" y2="-1.4" width="0.1016" layer="21"/>
+<wire x1="-1.55" y1="-1.35" x2="-1.55" y2="1.35" width="0.1016" layer="51"/>
+<wire x1="-0.6" y1="0.95" x2="0.6" y2="0.95" width="0.1016" layer="21" curve="-68.40813"/>
+<wire x1="0.6" y1="-0.95" x2="-0.6" y2="-0.95" width="0.1016" layer="21" curve="-68.40813"/>
+<circle x="0" y="0" radius="1.15" width="0.1016" layer="51"/>
+<smd name="A" x="-1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
+<smd name="C" x="1.55" y="0" dx="1.5" dy="2.2" layer="1"/>
+<text x="0" y="2.286" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-2.286" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="-1.75" y1="0.6" x2="-1.6" y2="1.1" layer="51"/>
+<rectangle x1="-1.75" y1="-1.1" x2="-1.6" y2="-0.6" layer="51"/>
+<rectangle x1="1.6" y1="-1.1" x2="1.75" y2="-0.6" layer="51" rot="R180"/>
+<rectangle x1="1.6" y1="0.6" x2="1.75" y2="1.1" layer="51" rot="R180"/>
+<polygon width="0.1016" layer="51">
+<vertex x="1.55" y="-1.35"/>
+<vertex x="1.55" y="-0.625"/>
+<vertex x="0.825" y="-1.35"/>
+</polygon>
+<polygon width="0.1016" layer="21">
+<vertex x="1.55" y="-1.4"/>
+<vertex x="1.55" y="-1.2"/>
+<vertex x="1" y="-1.2"/>
+<vertex x="0.8" y="-1.4"/>
+</polygon>
+</package>
+<package name="LED0805-ROJO" urn="urn:adsk.eagle:footprint:14345466/2">
+<wire x1="0.885" y1="0.35" x2="0.885" y2="-0.35" width="0.1016" layer="51" curve="162.394521"/>
+<wire x1="-0.965" y1="0.35" x2="-0.965" y2="-0.35" width="0.1016" layer="51" curve="-162.394521"/>
+<wire x1="0.485" y1="-0.575" x2="-0.565" y2="-0.575" width="0.1016" layer="51"/>
+<wire x1="-0.54" y1="0.575" x2="0.885" y2="0.575" width="0.1016" layer="51"/>
+<wire x1="-2" y1="1" x2="1.625" y2="1" width="0.15" layer="21"/>
+<wire x1="2" y1="0.625" x2="2" y2="-1" width="0.15" layer="21"/>
+<wire x1="2" y1="-1" x2="-2" y2="-1" width="0.15" layer="21"/>
+<wire x1="-2" y1="-1" x2="-2" y2="1" width="0.15" layer="21"/>
+<wire x1="1.625" y1="1" x2="2" y2="0.625" width="0.15" layer="21"/>
+<circle x="0.81" y="0.45" radius="0.103" width="0.1016" layer="51"/>
+<smd name="C" x="1.01" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
+<smd name="A" x="-1.09" y="0" dx="1.2" dy="1.2" layer="1" rot="R270"/>
+<text x="-0.04" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.04" y="-1.905" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<rectangle x1="0.5475" y1="-0.7125" x2="0.8725" y2="-0.2125" layer="51" rot="R270"/>
+<rectangle x1="0.51" y1="0.125" x2="0.66" y2="0.375" layer="51" rot="R270"/>
+<rectangle x1="0.51" y1="-0.375" x2="0.66" y2="-0.125" layer="51" rot="R270"/>
+<rectangle x1="0.3475" y1="-0.0875" x2="0.7475" y2="0.0875" layer="51" rot="R270"/>
+<rectangle x1="-0.9525" y1="-0.7125" x2="-0.6275" y2="-0.2125" layer="51" rot="R270"/>
+<rectangle x1="-0.9525" y1="0.2125" x2="-0.6275" y2="0.7125" layer="51" rot="R270"/>
+<rectangle x1="-0.74" y1="-0.375" x2="-0.59" y2="-0.125" layer="51" rot="R270"/>
+<rectangle x1="-0.74" y1="0.125" x2="-0.59" y2="0.375" layer="51" rot="R270"/>
+<rectangle x1="-0.8275" y1="-0.0875" x2="-0.4275" y2="0.0875" layer="51" rot="R270"/>
+<rectangle x1="0.06" y1="-0.1" x2="0.26" y2="0.1" layer="21" rot="R270"/>
+<rectangle x1="0.46" y1="0.3" x2="0.76" y2="0.6" layer="51" rot="R270"/>
+<rectangle x1="0.76" y1="0.425" x2="1.085" y2="0.5" layer="51" rot="R270"/>
+</package>
 </packages>
 <packages3d>
-<package3d name="DO-214AC" urn="urn:adsk.eagle:package:14345492/2" type="model">
-<packageinstances>
-<packageinstance name="DO-214AC"/>
-</packageinstances>
-</package3d>
-<package3d name="DO-35" urn="urn:adsk.eagle:package:14345482/2" type="model">
-<packageinstances>
-<packageinstance name="DO-35"/>
-</packageinstances>
-</package3d>
-<package3d name="LED1206-ROJO" urn="urn:adsk.eagle:package:14345571/2" type="model">
-<packageinstances>
-<packageinstance name="LED1206-ROJO"/>
-</packageinstances>
-</package3d>
-<package3d name="LED3528-ROJO" urn="urn:adsk.eagle:package:14345483/2" type="model">
-<packageinstances>
-<packageinstance name="LED3528-ROJO"/>
-</packageinstances>
-</package3d>
-<package3d name="LED1206-VERDE" urn="urn:adsk.eagle:package:14345515/4" type="model">
-<packageinstances>
-<packageinstance name="LED1206-VERDE"/>
-</packageinstances>
-</package3d>
-<package3d name="LED0805-ROJO" urn="urn:adsk.eagle:package:14345485/2" type="model">
-<packageinstances>
-<packageinstance name="LED0805-ROJO"/>
-</packageinstances>
-</package3d>
-<package3d name="LED0805" urn="urn:adsk.eagle:package:14345489/2" type="model">
-<packageinstances>
-<packageinstance name="LED0805-VERDE"/>
-</packageinstances>
-</package3d>
-<package3d name="LED3528-VERDE" urn="urn:adsk.eagle:package:14345488/2" type="model">
-<packageinstances>
-<packageinstance name="LED3528-VERDE"/>
-</packageinstances>
-</package3d>
-<package3d name="5730" urn="urn:adsk.eagle:package:14345480/2" type="model">
-<packageinstances>
-<packageinstance name="5730"/>
-</packageinstances>
-</package3d>
-<package3d name="LED1206-AMARILLO" urn="urn:adsk.eagle:package:14345570/2" type="model">
-<packageinstances>
-<packageinstance name="LED1206-AMARILLO"/>
-</packageinstances>
-</package3d>
-<package3d name="LED0805-AMARILLO" urn="urn:adsk.eagle:package:14345486/3" type="model">
-<packageinstances>
-<packageinstance name="LED0805-AMARILLO"/>
-</packageinstances>
-</package3d>
 <package3d name="LED1206-AZUL" urn="urn:adsk.eagle:package:14345572/2" type="model">
 <packageinstances>
 <packageinstance name="LED1206-AZUL"/>
@@ -645,6 +590,41 @@
 <packageinstance name="LED3528-AZUL"/>
 </packageinstances>
 </package3d>
+<package3d name="LED1206-AMARILLO" urn="urn:adsk.eagle:package:14345570/2" type="model">
+<packageinstances>
+<packageinstance name="LED1206-AMARILLO"/>
+</packageinstances>
+</package3d>
+<package3d name="LED0805-AMARILLO" urn="urn:adsk.eagle:package:14345486/3" type="model">
+<packageinstances>
+<packageinstance name="LED0805-AMARILLO"/>
+</packageinstances>
+</package3d>
+<package3d name="LED1206-VERDE" urn="urn:adsk.eagle:package:14345515/4" type="model">
+<packageinstances>
+<packageinstance name="LED1206-VERDE"/>
+</packageinstances>
+</package3d>
+<package3d name="LED3528-VERDE" urn="urn:adsk.eagle:package:14345488/2" type="model">
+<packageinstances>
+<packageinstance name="LED3528-VERDE"/>
+</packageinstances>
+</package3d>
+<package3d name="DO-35" urn="urn:adsk.eagle:package:14345482/2" type="model">
+<packageinstances>
+<packageinstance name="DO-35"/>
+</packageinstances>
+</package3d>
+<package3d name="DO-214AC" urn="urn:adsk.eagle:package:14345492/2" type="model">
+<packageinstances>
+<packageinstance name="DO-214AC"/>
+</packageinstances>
+</package3d>
+<package3d name="LED0805" urn="urn:adsk.eagle:package:14345489/2" type="model">
+<packageinstances>
+<packageinstance name="LED0805-VERDE"/>
+</packageinstances>
+</package3d>
 <package3d name="LED3528-BLANCO" urn="urn:adsk.eagle:package:14345491/3" type="model">
 <packageinstances>
 <packageinstance name="LED3528-BLANCO"/>
@@ -653,6 +633,26 @@
 <package3d name="LED0805-BLANCO" urn="urn:adsk.eagle:package:14345484/3" type="model">
 <packageinstances>
 <packageinstance name="LED0805-BLANCO"/>
+</packageinstances>
+</package3d>
+<package3d name="5730" urn="urn:adsk.eagle:package:14345480/3" type="model">
+<packageinstances>
+<packageinstance name="5730"/>
+</packageinstances>
+</package3d>
+<package3d name="LED1206-ROJO" urn="urn:adsk.eagle:package:14345571/2" type="model">
+<packageinstances>
+<packageinstance name="LED1206-ROJO"/>
+</packageinstances>
+</package3d>
+<package3d name="LED3528-ROJO" urn="urn:adsk.eagle:package:14345483/2" type="model">
+<packageinstances>
+<packageinstance name="LED3528-ROJO"/>
+</packageinstances>
+</package3d>
+<package3d name="LED0805-ROJO" urn="urn:adsk.eagle:package:14345485/2" type="model">
+<packageinstances>
+<packageinstance name="LED0805-ROJO"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -682,19 +682,6 @@
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
 </symbol>
-<symbol name="DIODO">
-<wire x1="0" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="-2.032" y="1.524" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.032" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="C" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
 <symbol name="SCHOTTKY">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
@@ -710,8 +697,65 @@
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="K" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="DIODO">
+<wire x1="0" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-2.032" y="1.524" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.032" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="LED-AZUL" prefix="LED" uservalue="yes">
+<description>LED SMD &lt;b&gt;Imax:20mA&lt;/b&gt;, color &lt;b&gt;azul&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0805" package="LED0805-AZUL">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345490/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3528" package="LED3528-AZUL">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345487/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206" package="LED1206-AZUL">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345572/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="DIODO" prefix="D" uservalue="yes">
 <description>Diodo rectificador de Silicio Vf:&lt;b&gt;0.7V&lt;/b&gt;</description>
 <gates>
@@ -764,70 +808,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-ROJO" prefix="LED" uservalue="yes">
-<description>LED SMD &lt;b&gt;Imax:20mA&lt;/b&gt;, color &lt;b&gt;Rojo&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0805" package="LED0805-ROJO">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345485/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3528" package="LED3528-ROJO">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345483/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1206" package="LED1206-ROJO">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345571/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="5730" prefix="LED">
-<description>LED de alta luminosidad, encapsulado 5730 3.4V 100mA</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="5730">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345480/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED-VERDE" prefix="LED" uservalue="yes">
 <description>LED SMD &lt;b&gt;Imax:20mA&lt;/b&gt;, color &lt;b&gt;verde&lt;/b&gt;</description>
 <gates>
@@ -872,6 +852,50 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="LED-BLANCO" prefix="LED" uservalue="yes">
+<description>LED SMD &lt;b&gt;Imax:20mA&lt;/b&gt;, color &lt;b&gt;Blanco&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3528" package="LED3528-BLANCO">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345491/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="LED0805-BLANCO">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345484/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5730" package="5730">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345480/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="LED-AMARILLO" prefix="LED" uservalue="yes">
 <description>LED SMD &lt;b&gt;Imax:20mA&lt;/b&gt;, color &lt;b&gt;Amarillo&lt;/b&gt;</description>
 <gates>
@@ -904,75 +928,43 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-BLANCO" prefix="LED" uservalue="yes">
-<description>LED SMD &lt;b&gt;Imax:20mA&lt;/b&gt;, color &lt;b&gt;Blanco&lt;/b&gt;</description>
+<deviceset name="LED-ROJO" prefix="LED" uservalue="yes">
+<description>LED SMD &lt;b&gt;Imax:20mA&lt;/b&gt;, color &lt;b&gt;Rojo&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="3528" package="LED3528-BLANCO">
+<device name="0805" package="LED0805-ROJO">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345491/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345485/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0805" package="LED0805-BLANCO">
+<device name="3528" package="LED3528-ROJO">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345484/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345483/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-</devices>
-</deviceset>
-<deviceset name="LED-AZUL" prefix="LED" uservalue="yes">
-<description>LED SMD &lt;b&gt;Imax:20mA&lt;/b&gt;, color &lt;b&gt;azul&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0805" package="LED0805-AZUL">
+<device name="1206" package="LED1206-ROJO">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345490/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3528" package="LED3528-AZUL">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345487/3"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1206" package="LED1206-AZUL">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345572/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345571/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
