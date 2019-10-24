@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -319,6 +319,31 @@
 <text x="0" y="3.175" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.81" size="0.8128" layer="27" font="vector" ratio="12" align="bottom-center">&gt;VALUE</text>
 </package>
+<package name="EIAJ-8" urn="urn:adsk.eagle:footprint:13494207/1">
+<wire x1="2.75" y1="2.7" x2="2.75" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="-2.7" x2="-2.75" y2="-2.7" width="0.2032" layer="51"/>
+<wire x1="-2.75" y1="-2.7" x2="-2.75" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="-2.75" y1="2.7" x2="2.75" y2="2.7" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-3.362" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="3.362" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-3.362" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-3.362" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-3.362" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="3.362" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="3.362" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="3.362" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.191" y="-2.413" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.862" x2="-1.66" y2="-2.762" layer="51"/>
+<rectangle x1="-0.88" y1="-3.862" x2="-0.39" y2="-2.762" layer="51"/>
+<rectangle x1="0.39" y1="-3.862" x2="0.88" y2="-2.762" layer="51"/>
+<rectangle x1="1.66" y1="-3.862" x2="2.15" y2="-2.762" layer="51"/>
+<rectangle x1="1.66" y1="2.762" x2="2.15" y2="3.862" layer="51"/>
+<rectangle x1="0.39" y1="2.762" x2="0.88" y2="3.862" layer="51"/>
+<rectangle x1="-0.88" y1="2.762" x2="-0.39" y2="3.862" layer="51"/>
+<rectangle x1="-2.15" y1="2.762" x2="-1.66" y2="3.862" layer="51"/>
+<circle x="-1.778" y="-1.27" radius="0.4" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF32" urn="urn:adsk.eagle:package:12270040/2" type="model">
@@ -326,9 +351,14 @@
 <packageinstance name="MLF32"/>
 </packageinstances>
 </package3d>
-<package3d name="TQFP32" urn="urn:adsk.eagle:package:12282553/2" type="model">
+<package3d name="TQFP32" urn="urn:adsk.eagle:package:12282553/3" type="model">
 <packageinstances>
 <packageinstance name="TQFP32"/>
+</packageinstances>
+</package3d>
+<package3d name="EIAJ-8" urn="urn:adsk.eagle:package:13494204/2" type="model">
+<packageinstances>
+<packageinstance name="EIAJ-8"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -370,6 +400,22 @@
 <pin name="PC1(ADC1)" x="25.4" y="25.4" length="middle" rot="R180"/>
 <pin name="PC0(ADC0)" x="25.4" y="27.94" length="middle" rot="R180"/>
 <pin name="PC6(/RESET)" x="-25.4" y="27.94" length="middle" function="dot"/>
+</symbol>
+<symbol name="ATTINY85">
+<pin name="VCC" x="-22.86" y="10.16" length="short" direction="pwr"/>
+<pin name="GND" x="-22.86" y="-7.62" length="short" direction="pwr"/>
+<pin name="PB0(MOSI/SDA)" x="22.86" y="-2.54" length="short" rot="R180"/>
+<pin name="PB1(MISO/D0)" x="22.86" y="0" length="short" rot="R180"/>
+<pin name="PB2(SCK/SCL)" x="22.86" y="2.54" length="short" rot="R180"/>
+<pin name="PB3(XTAL1/ADC3)" x="-22.86" y="5.08" length="short"/>
+<pin name="PB4(XTAL2/ADC2)" x="-22.86" y="-2.54" length="short"/>
+<pin name="PB5(RST/ADC0)" x="22.86" y="5.08" length="short" rot="R180"/>
+<wire x1="-20.32" y1="-10.16" x2="20.32" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-10.16" x2="20.32" y2="12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="12.7" x2="-20.32" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="12.7" x2="-20.32" y2="-10.16" width="0.254" layer="94"/>
+<text x="2.54" y="15.24" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="-5.08" y="-12.7" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -413,7 +459,7 @@
 <connect gate="G$1" pin="VCC" pad="4 6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12282553/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12282553/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -454,6 +500,32 @@
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:12270040/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATTINY85" prefix="U" uservalue="yes">
+<description>microcontrolador AVR de 8 bits &lt;b&gt;8KB&lt;/b&gt; memoria Flash</description>
+<gates>
+<gate name="G$1" symbol="ATTINY85" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EIAJ-8">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="PB0(MOSI/SDA)" pad="5"/>
+<connect gate="G$1" pin="PB1(MISO/D0)" pad="6"/>
+<connect gate="G$1" pin="PB2(SCK/SCL)" pad="7"/>
+<connect gate="G$1" pin="PB3(XTAL1/ADC3)" pad="2"/>
+<connect gate="G$1" pin="PB4(XTAL2/ADC2)" pad="3"/>
+<connect gate="G$1" pin="PB5(RST/ADC0)" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13494204/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
