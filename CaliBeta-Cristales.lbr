@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="9" fill="1" visible="yes" active="yes"/>
@@ -32,7 +32,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -156,30 +156,51 @@
 </layers>
 <library>
 <packages>
-<package name="3-SMD" urn="urn:adsk.eagle:footprint:14744357/1">
+<package name="3-SMD" urn="urn:adsk.eagle:footprint:14744357/2">
 <smd name="2" x="0" y="0" dx="0.5" dy="2" layer="1"/>
 <smd name="3" x="-1.2" y="0" dx="0.5" dy="2" layer="1"/>
 <smd name="1" x="1.2" y="0" dx="0.5" dy="2" layer="1"/>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.127" layer="51"/>
-<wire x1="-1.7" y1="0.7" x2="-1.7" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-0.7" x2="-1.52" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="0.7" x2="-1.48" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="0.7" x2="-0.4" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-0.7" x2="-0.4" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="0.4" y1="0.7" x2="0.8" y2="0.7" width="0.127" layer="21"/>
-<wire x1="0.4" y1="-0.7" x2="0.8" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="1.7" y1="0.7" x2="1.7" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="1.55" y1="0.7" x2="1.7" y2="0.7" width="0.127" layer="21"/>
-<wire x1="1.55" y1="-0.7" x2="1.7" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.15" layer="51"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.15" layer="51"/>
+<wire x1="-1.7" y1="0.7" x2="-1.7" y2="-0.7" width="0.15" layer="21"/>
+<wire x1="-1.7" y1="-0.7" x2="-1.52" y2="-0.7" width="0.15" layer="21"/>
+<wire x1="-1.7" y1="0.7" x2="-1.48" y2="0.7" width="0.15" layer="21"/>
+<wire x1="-0.8" y1="0.7" x2="-0.4" y2="0.7" width="0.15" layer="21"/>
+<wire x1="-0.8" y1="-0.7" x2="-0.4" y2="-0.7" width="0.15" layer="21"/>
+<wire x1="0.4" y1="0.7" x2="0.8" y2="0.7" width="0.15" layer="21"/>
+<wire x1="0.4" y1="-0.7" x2="0.8" y2="-0.7" width="0.15" layer="21"/>
+<wire x1="1.7" y1="0.7" x2="1.7" y2="-0.7" width="0.15" layer="21"/>
+<wire x1="1.55" y1="0.7" x2="1.7" y2="0.7" width="0.15" layer="21"/>
+<wire x1="1.55" y1="-0.7" x2="1.7" y2="-0.7" width="0.15" layer="21"/>
 <text x="-0.034" y="1.9" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="-0.034" y="-1.863" size="1.27" layer="27" align="center">&gt;VALUE</text>
 </package>
+<package name="HC-49-4HSMX" urn="urn:adsk.eagle:footprint:14744810/1">
+<smd name="2" x="4.75" y="0" dx="2" dy="5.5" layer="1" rot="R90"/>
+<smd name="1" x="-4.75" y="0" dx="2" dy="5.5" layer="1" rot="R90"/>
+<wire x1="-5.85" y1="2.5" x2="5.85" y2="2.5" width="0.2" layer="51"/>
+<wire x1="5.85" y1="2.5" x2="5.85" y2="-2.5" width="0.2" layer="51"/>
+<wire x1="5.85" y1="-2.5" x2="-5.85" y2="-2.5" width="0.2" layer="51"/>
+<wire x1="-5.85" y1="-2.5" x2="-5.85" y2="2.5" width="0.2" layer="51"/>
+<wire x1="-5.85" y1="1.09" x2="-5.85" y2="2.5" width="0.2" layer="21"/>
+<wire x1="-5.85" y1="2.5" x2="5.85" y2="2.5" width="0.2" layer="21"/>
+<wire x1="5.85" y1="2.5" x2="5.85" y2="1.12" width="0.2" layer="21"/>
+<wire x1="5.85" y1="-1.1" x2="5.85" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="5.85" y1="-2.5" x2="-5.85" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-5.85" y1="-2.5" x2="-5.85" y2="-1.12" width="0.2" layer="21"/>
+<text x="-0.039" y="3.417" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.043" y="-3.488" size="1.27" layer="27" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
-<package3d name="3-SMD" urn="urn:adsk.eagle:package:14744359/2" type="model">
+<package3d name="3-SMD" urn="urn:adsk.eagle:package:14744359/3" type="model">
 <packageinstances>
 <packageinstance name="3-SMD"/>
+</packageinstances>
+</package3d>
+<package3d name="HC-49-4HSMX" urn="urn:adsk.eagle:package:14744812/2" type="model">
+<packageinstances>
+<packageinstance name="HC-49-4HSMX"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -212,8 +233,46 @@
 <text x="0" y="7.366" size="1.778" layer="95" align="center">&gt;NAME</text>
 <text x="-0.254" y="-7.62" size="1.778" layer="96" align="center">&gt;VALUE</text>
 </symbol>
+<symbol name="CRYSTAL">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="0" y="3.048" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-3.048" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="CSTNE16M0V53-R0" prefix="XT" uservalue="yes">
+<description>&lt;p&gt;Crystal ceramico resonador fabricado con capacitor,&lt;b&gt; 16MHz - 15pF, ±0.5% - 40 Ohm&lt;/b&gt;&lt;/p&gt;
+&lt;a href="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/ceralock/p16e.ashx"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL-SMD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3-SMD">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="X1" pad="1"/>
+<connect gate="G$1" pin="X2" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14744359/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="CSTNE8M00G52-R0" prefix="XT" uservalue="yes">
 <description>&lt;p&gt;Crystal ceramico resonador fabricado con capacitor, &lt;b&gt;8MHz - 10pF, ±0.5% - 40 Ohm&lt;/b&gt;&lt;/p&gt;
 &lt;BR&gt;
@@ -229,7 +288,7 @@
 <connect gate="G$1" pin="X2" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14744359/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14744359/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -252,7 +311,7 @@
 <connect gate="G$1" pin="X2" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14744359/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14744359/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -260,24 +319,32 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="CSTNE16M0V53-R0" prefix="XT" uservalue="yes">
-<description>&lt;p&gt;Crystal ceramico resonador fabricado con capacitor,&lt;b&gt; 16MHz - 15pF, ±0.5% - 40 Ohm&lt;/b&gt;&lt;/p&gt;
-&lt;a href="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/ceralock/p16e.ashx"&gt;Datasheet&lt;/a&gt;</description>
+<deviceset name="LFXTAL" prefix="XT" uservalue="yes">
+<description>&lt;p&gt;Crystal ceramico resonador, capacitor de carga &lt;b&gt;20pF, ±30ppm - 40 Ohm&lt;/b&gt;&lt;/p&gt;
+&lt;BR&gt;
+&lt;a href="https://www.iqdfrequencyproducts.com/products/pn/LFXTAL078542Reel.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="CRYSTAL-SMD" x="0" y="0"/>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="3-SMD">
+<device name="" package="HC-49-4HSMX">
 <connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="X1" pad="1"/>
-<connect gate="G$1" pin="X2" pad="3"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14744359/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14744812/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="015055">
+<attribute name="FRECUENCIA" value="16MHz"/>
+</technology>
+<technology name="020423">
+<attribute name="FRECUENCIA" value="8MHz"/>
+</technology>
+<technology name="078542">
+<attribute name="FRECUENCIA" value="4MHz"/>
+</technology>
 </technologies>
 </device>
 </devices>
