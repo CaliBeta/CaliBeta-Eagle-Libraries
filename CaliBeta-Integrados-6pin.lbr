@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -72,7 +72,7 @@
 </layers>
 <library>
 <packages>
-<package name="SOT-23-6" urn="urn:adsk.eagle:footprint:14345634/1">
+<package name="SOT-23-6L" urn="urn:adsk.eagle:footprint:14345634/2">
 <wire x1="1.552" y1="-0.881" x2="-1.493" y2="-0.881" width="0.1524" layer="51"/>
 <wire x1="-1.493" y1="-0.881" x2="-1.493" y2="0.681" width="0.1524" layer="21"/>
 <wire x1="-1.493" y1="0.681" x2="1.552" y2="0.681" width="0.1524" layer="51"/>
@@ -131,9 +131,9 @@
 </package>
 </packages>
 <packages3d>
-<package3d name="SOT-23-6" urn="urn:adsk.eagle:package:14345639/1" type="model">
+<package3d name="SOT-23-6" urn="urn:adsk.eagle:package:14345639/2" type="model">
 <packageinstances>
-<packageinstance name="SOT-23-6"/>
+<packageinstance name="SOT-23-6L"/>
 </packageinstances>
 </package3d>
 <package3d name="SOT-89-5" urn="urn:adsk.eagle:package:14345638/2" type="model">
@@ -143,21 +143,6 @@
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="PT4115">
-<description>30V, 1.2A Step-down High Brightness
-LED Driver with 5000:1 Dimming</description>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<pin name="GND" x="0" y="-10.16" visible="pin" length="short" direction="pwr" rot="R90"/>
-<pin name="SW" x="12.7" y="0" visible="pin" length="short" direction="out" rot="R180"/>
-<pin name="DIM" x="-12.7" y="-5.08" visible="pin" length="short" direction="in"/>
-<pin name="CSN" x="-12.7" y="2.54" visible="pin" length="short" direction="in"/>
-<pin name="VIN" x="0" y="10.16" visible="pin" length="short" direction="pwr" rot="R270"/>
-<text x="-10.16" y="8.128" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
-</symbol>
 <symbol name="TTP223">
 <description>Sensor tactil capacitivo</description>
 <wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
@@ -173,6 +158,21 @@ LED Driver with 5000:1 Dimming</description>
 <text x="-2.54" y="15.24" size="1.778" layer="95" rot="R180">&gt;NAME</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="PT4115">
+<description>30V, 1.2A Step-down High Brightness
+LED Driver with 5000:1 Dimming</description>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-10.16" visible="pin" length="short" direction="pwr" rot="R90"/>
+<pin name="SW" x="12.7" y="0" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="DIM" x="-12.7" y="-5.08" visible="pin" length="short" direction="in"/>
+<pin name="CSN" x="-12.7" y="2.54" visible="pin" length="short" direction="in"/>
+<pin name="VIN" x="0" y="10.16" visible="pin" length="short" direction="pwr" rot="R270"/>
+<text x="-10.16" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TTP223B" prefix="IC">
@@ -181,7 +181,7 @@ LED Driver with 5000:1 Dimming</description>
 <gate name="G$1" symbol="TTP223" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT-23-6">
+<device name="" package="SOT-23-6L">
 <connects>
 <connect gate="G$1" pin="AHLB" pad="4"/>
 <connect gate="G$1" pin="IN" pad="3"/>
@@ -191,7 +191,7 @@ LED Driver with 5000:1 Dimming</description>
 <connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345639/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345639/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
