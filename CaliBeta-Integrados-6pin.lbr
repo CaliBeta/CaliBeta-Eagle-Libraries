@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -72,27 +72,6 @@
 </layers>
 <library>
 <packages>
-<package name="SOT-23-6L" urn="urn:adsk.eagle:footprint:14345634/2">
-<wire x1="1.552" y1="-0.881" x2="-1.493" y2="-0.881" width="0.1524" layer="51"/>
-<wire x1="-1.493" y1="-0.881" x2="-1.493" y2="0.681" width="0.1524" layer="21"/>
-<wire x1="-1.493" y1="0.681" x2="1.552" y2="0.681" width="0.1524" layer="51"/>
-<wire x1="1.552" y1="0.681" x2="1.552" y2="-0.881" width="0.1524" layer="21"/>
-<circle x="-1.12" y="-0.55" radius="0.1" width="0" layer="21"/>
-<smd name="1" x="-0.92" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
-<smd name="2" x="0.03" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
-<smd name="3" x="0.98" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
-<smd name="4" x="0.98" y="1.05" dx="0.6" dy="0.9" layer="1"/>
-<smd name="5" x="0.03" y="1.05" dx="0.6" dy="0.9" layer="1"/>
-<smd name="6" x="-0.92" y="1.05" dx="0.6" dy="0.9" layer="1"/>
-<text x="-1.367" y="-2.772" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.367" y="1.602" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-1.17" y1="-1.5" x2="-0.67" y2="-0.9" layer="51"/>
-<rectangle x1="-0.22" y1="-1.5" x2="0.28" y2="-0.9" layer="51"/>
-<rectangle x1="0.73" y1="-1.5" x2="1.23" y2="-0.9" layer="51"/>
-<rectangle x1="0.73" y1="0.7" x2="1.23" y2="1.3" layer="51"/>
-<rectangle x1="-0.22" y1="0.7" x2="0.28" y2="1.3" layer="51"/>
-<rectangle x1="-1.17" y1="0.7" x2="-0.67" y2="1.3" layer="51"/>
-</package>
 <package name="SOT-89-5" urn="urn:adsk.eagle:footprint:14345635/1">
 <wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
 <wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="21"/>
@@ -129,6 +108,27 @@
 <vertex x="-0.7874" y="1.2954"/>
 </polygon>
 </package>
+<package name="SOT-23-6L" urn="urn:adsk.eagle:footprint:14345634/2">
+<wire x1="1.552" y1="-0.881" x2="-1.493" y2="-0.881" width="0.1524" layer="51"/>
+<wire x1="-1.493" y1="-0.881" x2="-1.493" y2="0.681" width="0.1524" layer="21"/>
+<wire x1="-1.493" y1="0.681" x2="1.552" y2="0.681" width="0.1524" layer="51"/>
+<wire x1="1.552" y1="0.681" x2="1.552" y2="-0.881" width="0.1524" layer="21"/>
+<circle x="-1.12" y="-0.55" radius="0.1" width="0" layer="21"/>
+<smd name="1" x="-0.92" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
+<smd name="2" x="0.03" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
+<smd name="3" x="0.98" y="-1.25" dx="0.6" dy="0.9" layer="1"/>
+<smd name="4" x="0.98" y="1.05" dx="0.6" dy="0.9" layer="1"/>
+<smd name="5" x="0.03" y="1.05" dx="0.6" dy="0.9" layer="1"/>
+<smd name="6" x="-0.92" y="1.05" dx="0.6" dy="0.9" layer="1"/>
+<text x="-1.367" y="-2.772" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.367" y="1.602" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.17" y1="-1.5" x2="-0.67" y2="-0.9" layer="51"/>
+<rectangle x1="-0.22" y1="-1.5" x2="0.28" y2="-0.9" layer="51"/>
+<rectangle x1="0.73" y1="-1.5" x2="1.23" y2="-0.9" layer="51"/>
+<rectangle x1="0.73" y1="0.7" x2="1.23" y2="1.3" layer="51"/>
+<rectangle x1="-0.22" y1="0.7" x2="0.28" y2="1.3" layer="51"/>
+<rectangle x1="-1.17" y1="0.7" x2="-0.67" y2="1.3" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOT-23-6" urn="urn:adsk.eagle:package:14345639/2" type="model">
@@ -143,21 +143,6 @@
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="TTP223">
-<description>Sensor tactil capacitivo</description>
-<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<pin name="VDD" x="0" y="15.24" length="short" direction="pwr" rot="R270"/>
-<pin name="VSS" x="0" y="-15.24" length="short" direction="pwr" rot="R90"/>
-<pin name="IN" x="-12.7" y="0" length="short" direction="in"/>
-<pin name="Q" x="12.7" y="5.08" length="short" direction="out" rot="R180"/>
-<pin name="TOG" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="AHLB" x="12.7" y="-5.08" length="short" rot="R180"/>
-<text x="-2.54" y="15.24" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="PT4115">
 <description>30V, 1.2A Step-down High Brightness
 LED Driver with 5000:1 Dimming</description>
@@ -173,32 +158,23 @@ LED Driver with 5000:1 Dimming</description>
 <text x="-10.16" y="8.128" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
+<symbol name="TTP223">
+<description>Sensor tactil capacitivo</description>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="0" y="10.16" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS" x="0" y="-10.16" length="short" direction="pwr" rot="R90"/>
+<pin name="IN" x="-10.16" y="0" length="short" direction="in"/>
+<pin name="Q" x="10.16" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="TOG" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="AHL" x="10.16" y="-2.54" length="short" rot="R180"/>
+<text x="-2.54" y="15.24" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="TTP223B" prefix="IC">
-<description>Sensor tactil capacitivo de sensibilidad variable VCC: 2V-5V</description>
-<gates>
-<gate name="G$1" symbol="TTP223" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-6L">
-<connects>
-<connect gate="G$1" pin="AHLB" pad="4"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="Q" pad="1"/>
-<connect gate="G$1" pin="TOG" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14345639/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PT4115" prefix="IC">
 <description>30V, 1.2A Step-down High Brightness
 LED Driver with 5000:1 Dimming</description>
@@ -216,6 +192,30 @@ LED Driver with 5000:1 Dimming</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:14345638/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TTP223B" prefix="IC">
+<description>Sensor tactil capacitivo de sensibilidad variable VCC: 2V-5V</description>
+<gates>
+<gate name="IC" symbol="TTP223" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-6L">
+<connects>
+<connect gate="IC" pin="AHL" pad="4"/>
+<connect gate="IC" pin="IN" pad="3"/>
+<connect gate="IC" pin="Q" pad="1"/>
+<connect gate="IC" pin="TOG" pad="6"/>
+<connect gate="IC" pin="VDD" pad="5"/>
+<connect gate="IC" pin="VSS" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14345639/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
